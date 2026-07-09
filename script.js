@@ -12,20 +12,28 @@ if (datos) {
     document.querySelector("button").disabled = true;
 }
 
+function normalizar(texto) {
+
+    return texto
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim()
+        .toLowerCase();
+
+}
+
 function comprobar() {
 
     if (!datos)
         return;
 
-    let respuestaUsuario = document
-        .getElementById("respuesta")
-        .value
-        .trim()
-        .toLowerCase();
+   let respuestaUsuario = normalizar(
+    document.getElementById("respuesta").value
+);
 
-    let respuestaCorrecta = datos.respuesta
-        .trim()
-        .toLowerCase();
+let respuestaCorrecta = normalizar(
+    datos.respuesta
+);
 
     if (respuestaUsuario === respuestaCorrecta) {
 

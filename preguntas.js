@@ -1,9 +1,9 @@
 const preguntas = {
     1: {
-        pregunta: "¿En que año fue 1+1?",
-        respuesta: "El fantastico ralph",
-        mensaje: "¡Correcto!\n\nLa siguiente pista es:\nBusca el árbol grande."
-    },
+    pregunta: "¿En qué año fue 1+1?",
+    respuesta: "El fantástico Ralph",
+    mensaje: "¡Correcto!\n\nLa siguiente pista es:\nBusca el árbol grande."
+},
 
     2: {
         pregunta: "¿Capital de España?",
