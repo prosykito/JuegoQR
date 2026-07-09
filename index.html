@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego QR</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1 id="titulo">Pregunta</h1>
+
+        <p id="pregunta">
+            Cargando...
+        </p>
+
+        <input
+            type="text"
+            id="respuesta"
+            placeholder="Escribe tu respuesta">
+
+        <br><br>
+
+        <button onclick="comprobar()">
+            Comprobar
+        </button>
+
+        <p id="resultado"></p>
+
+    </div>
+
+    <script src="preguntas.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
