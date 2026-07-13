@@ -1,8 +1,8 @@
 const preguntas = {
     1: {
-    pregunta: "¿En qué año fue 1+1?",
-    respuesta: "El fantastico Ralph",
-    mensaje: "¡Correcto!\n\nLa siguiente pista es:\nBusca el árbol grande."
+    pregunta: "Los locos se obsesionan con las cifras. Necesitan que conteis el numero de cuadrados de la red de volleyball multiplicado por el numero de pajaros de la pista de pádel dividido entre el numero de barbacoas.",
+    respuesta: "3995",
+    mensaje: "¡Correcto!"
 },
 
     2: {
