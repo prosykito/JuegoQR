@@ -15,4 +15,10 @@ const preguntas = {
         respuesta: "28/09/82",
         mensaje: "Muy bien.\n\nLa siguiente coordenada es B4 y el codigo es 5211"
 },
+
+    4: {
+        pregunta:"Los ojos pueden engañarte. Confia unicamente en tus manos. Introduce la mano en la caja y descubre el diagnostico oculto",
+        respuesta: "lunatico",
+        mensaje: "Exacto"
+    },
 };
