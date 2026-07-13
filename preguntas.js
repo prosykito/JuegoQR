@@ -9,9 +9,9 @@ const preguntas = {
         pregunta: "¿Capital de España?",
         respuesta: "madrid",
         mensaje: "Muy bien.\n\nLa siguiente coordenada es:\nN42°15.842"
-    }
-        3: {
-        pregunta: "¿?",
+    },
+    3: {
+        pregunta: "¿tercera pregunta 0764?",
         respuesta: "0764 keloke",
         mensaje: "Muy bien.\n\nLa siguiente coordenada es:\nN42°15.742"
 }
