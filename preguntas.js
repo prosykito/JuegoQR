@@ -26,4 +26,15 @@ const preguntas = {
         respuesta:"s3gur1d4d",
         mensaje:"bien"
     },
+    6: {
+        pregunta:"Encuentra la clave de la tarjeta de seguridad",
+        respuesta:"1234",
+        mensaje:"exitazo"
+
+    },
+    7: {
+        pregunta:"",
+        respuesta:"",
+        mensaje:"bravisimo"
+    },
 };
