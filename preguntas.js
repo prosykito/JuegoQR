@@ -21,4 +21,9 @@ const preguntas = {
         respuesta: "lunatico",
         mensaje: "Exacto"
     },
+    5: {
+        pregunta:"En esta zona hay pacientes muy violentos y han roto el codigo de seguridad. recomponerlo para poder continuar",
+        respuesta:"s3gur1d4d",
+        mensaje:"bien"
+    },
 };
