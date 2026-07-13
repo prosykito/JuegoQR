@@ -6,13 +6,15 @@ const preguntas = {
 },
 
     2: {
-        pregunta: "segunda",
-        respuesta: "madrid",
+        pregunta: "En el ala oeste del asilo aprendimos que la locura no se mide en mililitros, sino en la presión que ejerce el alma sobre el suelo. El delirio te vuelve ligero como el humo; la culpa, pesado como el plomo.
+Buscad el Gran Juez Inanimado de San Martín de Valvení. Es un frío altar gris empotrado en la tierra, diseñado para que los hombres confiesen su carga sin decir una sola palabra. Carece de ojos, pero dictamina sentencias mudas usando solo números que emergen del suelo.
+Vuestra pista no está en las alturas, sino a ras de suelo, allí donde los frutos de la tierra y los monstruos de hierro se ven obligados a detener su marcha para ser desvestidos de su masa. Si os situáis sobre el juez, sabréis vuestra condena; si encontráis su ranura, hallaréis vuestra salida.",
+        respuesta: "56",
         mensaje: "correcto"
     },
     3: {
         pregunta: "Escribe la fecha exacta en la que uno de nuestros pacientes dijo: San Martín guarda secretos",
-        respuesta: "0764 28/09/82",
+        respuesta: "28/09/82",
         mensaje: "Muy bien.\n\nLa siguiente coordenada es B4 y el codigo es 5211"
 },
 };
