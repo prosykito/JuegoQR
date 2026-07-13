@@ -1,6 +1,6 @@
 const preguntas = {
     1: {
-    pregunta: "Los locos se obsesionan con las cifras. Necesitan que conteis el numero de cuadrados de la red de volleyball multiplicado por el numero de pajaros de la pista de pádel dividido entre el numero de barbacoas.",
+    pregunta: "Los locos se obsesionan con las cifras. Necesitan que conteis el numero de cuadrados de la red de volleyball multiplicado por el numero de pájaros de la pista de pádel dividido entre el numero de barbacoas.",
     respuesta: "3995",
     mensaje: "¡Correcto!"
 },
