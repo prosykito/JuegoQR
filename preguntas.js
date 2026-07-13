@@ -6,9 +6,9 @@ const preguntas = {
 },
 
     2: {
-        pregunta: "¿Capital de España?",
+        pregunta: "segunda",
         respuesta: "madrid",
-        mensaje: "Muy bien.\n\nLa siguiente coordenada es:\nN42°15.842"
+        mensaje: "correcto"
     },
     3: {
         pregunta: "Escribe la fecha exacta en la que uno de nuestros pacientes dijo: San Martín guarda secretos",
