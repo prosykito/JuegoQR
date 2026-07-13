@@ -10,4 +10,9 @@ const preguntas = {
         respuesta: "madrid",
         mensaje: "Muy bien.\n\nLa siguiente coordenada es:\nN42°15.842"
     }
+        3: {
+        pregunta: "¿?",
+        respuesta: "0764 keloke",
+        mensaje: "Muy bien.\n\nLa siguiente coordenada es:\nN42°15.742"
+}
 };
