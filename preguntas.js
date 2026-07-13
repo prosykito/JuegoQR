@@ -13,6 +13,6 @@ const preguntas = {
     3: {
         pregunta: "Escribe la fecha exacta en la que uno de nuestros pacientes dijo: San Martín guarda secretos",
         respuesta: "0764 28/09/82",
-        mensaje: "Muy bien.\n\nLa siguiente coordenada es B4 y el cosigo es 5211"
+        mensaje: "Muy bien.\n\nLa siguiente coordenada es B4 y el codigo es 5211"
 },
 };
