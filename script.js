@@ -260,7 +260,21 @@ function comprobar() {
         respuestaCorrectaOK
     ) {
 
+    // ===============================
+    // Actualizar progreso en Firebase
+    // ===============================
 
+    actualizarEstadoEquipo(
+
+        equipoEncontrado.nombre,
+
+        Number(id),
+
+        equipoEncontrado.pruebas[id].coordenada,
+
+        equipoEncontrado.pruebas[id].codigoSalida
+
+    );
         document.getElementById("resultado").innerHTML = `
 
         <div style="
