@@ -19,7 +19,10 @@ if (datos) {
     let multimedia = "";
 
 
+    // ===============================
     // Imagen
+    // ===============================
+
     if (datos.imagen && datos.imagen !== "") {
 
         multimedia += `
@@ -35,7 +38,11 @@ if (datos) {
     }
 
 
+
+    // ===============================
     // Vídeo con pantalla previa
+    // ===============================
+
     if (datos.video && datos.video !== "") {
 
         multimedia += `
@@ -54,6 +61,7 @@ if (datos) {
                 🎬 PRUEBA DE VÍDEO
             </h2>
 
+
             <p style="font-size:20px;">
                 Cuando todo el equipo esté preparado,
                 pulsa el botón para comenzar.
@@ -68,10 +76,14 @@ if (datos) {
                     border-radius:10px;
                     cursor:pointer;
                 ">
+
                 ▶ VER VÍDEO
+
             </button>
 
+
         </div>
+
 
 
         <video
@@ -95,11 +107,15 @@ if (datos) {
 
     document.getElementById("multimedia").innerHTML = multimedia;
 
+
 }
+
 
 else {
 
-    document.getElementById("pregunta").textContent = "Pregunta no encontrada.";
+    document.getElementById("pregunta").textContent =
+        "Pregunta no encontrada.";
+
     document.querySelector("button").disabled = true;
 
 }
@@ -116,15 +132,13 @@ function mostrarVideo() {
     let video = document.getElementById("videoPrueba");
 
 
-    if (aviso) {
+    if (aviso)
         aviso.style.display = "none";
-    }
 
 
     if (video) {
 
         video.style.display = "block";
-
         video.play();
 
     }
@@ -159,6 +173,7 @@ function comprobar() {
         return;
 
 
+
     let codigoUsuario = normalizar(
         document.getElementById("codigo").value
     );
@@ -169,18 +184,28 @@ function comprobar() {
     );
 
 
+
     let equipoEncontrado = null;
 
 
-    // Buscar el equipo correspondiente
+
+    // ===============================
+    // Buscar equipo por código
+    // ===============================
+
     for (const equipo of Object.values(equipos)) {
+
 
         if (!equipo.pruebas[id])
             continue;
 
 
+
         if (
-            normalizar(equipo.pruebas[id].codigoEntrada) === codigoUsuario
+            normalizar(
+                equipo.pruebas[id].codigoEntrada
+            )
+            === codigoUsuario
         ) {
 
             equipoEncontrado = equipo;
@@ -191,86 +216,175 @@ function comprobar() {
     }
 
 
-    let respuestaCorrecta = normalizar(datos.respuesta);
+
+    let respuestaCorrecta = normalizar(
+        datos.respuesta
+    );
 
 
 
-    // ===========================
-    // RESPUESTA CORRECTA
-    // ===========================
+    // ===============================
+    // Comprobaciones separadas
+    // ===============================
+
+    let codigoCorrecto = false;
+    let respuestaCorrectaOK = false;
+
+
+
+    if (equipoEncontrado) {
+
+        codigoCorrecto = true;
+
+    }
+
+
 
     if (
-        equipoEncontrado &&
         respuestaUsuario === respuestaCorrecta
+    ) {
+
+        respuestaCorrectaOK = true;
+
+    }
+
+
+
+
+    // ===============================
+    // TODO CORRECTO
+    // ===============================
+
+    if (
+        codigoCorrecto &&
+        respuestaCorrectaOK
     ) {
 
 
         document.getElementById("resultado").innerHTML = `
 
-<div style="
-background:#214221;
-border:3px solid #4CAF50;
-border-radius:12px;
-padding:25px;
-margin-top:30px;
-text-align:center;">
+        <div style="
+        background:#214221;
+        border:3px solid #4CAF50;
+        border-radius:12px;
+        padding:25px;
+        margin-top:30px;
+        text-align:center;">
 
 
-<h2 style="color:#8cff8c;margin-top:0;">
-🧠 DIAGNÓSTICO SUPERADO
-</h2>
+        <h2 style="color:#8cff8c;">
+            🧠 DIAGNÓSTICO COMPLETADO
+        </h2>
 
 
-<p style="font-size:24px;">
-📍<br>
-<b>Siguiente ubicación</b><br><br>
-${equipoEncontrado.pruebas[id].coordenada}
-</p>
+        <p style="font-size:24px;">
+            📍<br>
+            <b>Siguiente ubicación</b>
+            <br><br>
+
+            ${equipoEncontrado.pruebas[id].coordenada}
+
+        </p>
 
 
-<hr>
+        <hr>
 
 
-<p style="font-size:24px;">
-🔑<br>
-<b>Código de acceso</b><br><br>
-${equipoEncontrado.pruebas[id].codigoSalida}
-</p>
+        <p style="font-size:24px;">
+
+            🔑<br>
+            <b>Código de acceso</b>
+            <br><br>
+
+            ${equipoEncontrado.pruebas[id].codigoSalida}
+
+        </p>
 
 
-</div>
+        </div>
 
-`;
+        `;
+
 
     }
 
 
 
-    // ===========================
-    // RESPUESTA INCORRECTA
-    // ===========================
+    // ===============================
+    // Algún dato incorrecto
+    // ===============================
 
     else {
 
 
+        let mensajeError = "";
+
+
+
+        if (
+            !codigoCorrecto &&
+            !respuestaCorrectaOK
+        ) {
+
+
+            mensajeError = `
+            ❌ Código incorrecto
+            <br><br>
+            ❌ Respuesta incorrecta
+            `;
+
+
+        }
+
+
+        else if (!codigoCorrecto) {
+
+
+            mensajeError = `
+            ❌ Código incorrecto
+            `;
+
+
+        }
+
+
+        else if (!respuestaCorrectaOK) {
+
+
+            mensajeError = `
+            ❌ Respuesta incorrecta
+            `;
+
+
+        }
+
+
+
         document.getElementById("resultado").innerHTML = `
 
-<div style="
-background:#4a1b1b;
-border:3px solid #cc4444;
-border-radius:12px;
-padding:20px;
-margin-top:30px;
-text-align:center;
-font-weight:bold;">
 
-❌ Código o respuesta incorrectos.
+        <div style="
+        background:#4a1b1b;
+        border:3px solid #cc4444;
+        border-radius:12px;
+        padding:20px;
+        margin-top:30px;
+        text-align:center;
+        font-weight:bold;
+        font-size:22px;">
 
-</div>
 
-`;
+        ${mensajeError}
+
+
+        </div>
+
+
+        `;
+
 
     }
+
 
 }
 
@@ -282,12 +396,15 @@ font-weight:bold;">
 
 document
     .getElementById("codigo")
-    .addEventListener("keypress", function (e) {
+    .addEventListener(
+        "keypress",
+        function(e) {
 
-        if (e.key === "Enter")
-            comprobar();
+            if (e.key === "Enter")
+                comprobar();
 
-    });
+        }
+    );
 
 
 
@@ -297,9 +414,12 @@ document
 
 document
     .getElementById("respuesta")
-    .addEventListener("keypress", function (e) {
+    .addEventListener(
+        "keypress",
+        function(e) {
 
-        if (e.key === "Enter")
-            comprobar();
+            if (e.key === "Enter")
+                comprobar();
 
-    });
+        }
+    );
