@@ -7,6 +7,7 @@ const id = parametros.get("id");
 
 const datos = preguntas[id];
 
+
 // ===============================
 // Mostrar pregunta
 // ===============================
@@ -16,6 +17,7 @@ if (datos) {
     document.getElementById("pregunta").textContent = datos.pregunta;
 
     let multimedia = "";
+
 
     // Imagen
     if (datos.imagen && datos.imagen !== "") {
@@ -32,32 +34,104 @@ if (datos) {
 
     }
 
-    // Vídeo
+
+    // Vídeo con pantalla previa
     if (datos.video && datos.video !== "") {
 
         multimedia += `
-            <video
-                controls
+
+        <div id="avisoVideo"
+            style="
+                background:#222;
+                border:3px solid #4CAF50;
+                border-radius:12px;
+                padding:25px;
+                margin:20px 0;
+                text-align:center;
+            ">
+
+            <h2 style="color:#8cff8c;">
+                🎬 PRUEBA DE VÍDEO
+            </h2>
+
+            <p style="font-size:20px;">
+                Cuando todo el equipo esté preparado,
+                pulsa el botón para comenzar.
+            </p>
+
+
+            <button 
+                onclick="mostrarVideo()"
                 style="
-                    width:100%;
+                    font-size:22px;
+                    padding:15px 30px;
                     border-radius:10px;
-                    margin:20px 0;
+                    cursor:pointer;
                 ">
-                <source src="${datos.video}" type="video/mp4">
-            </video>
+                ▶ VER VÍDEO
+            </button>
+
+        </div>
+
+
+        <video
+            id="videoPrueba"
+            controls
+            style="
+                display:none;
+                width:100%;
+                border-radius:10px;
+                margin:20px 0;
+            ">
+
+            <source src="${datos.video}" type="video/mp4">
+
+        </video>
+
         `;
 
     }
 
+
     document.getElementById("multimedia").innerHTML = multimedia;
 
 }
+
 else {
 
     document.getElementById("pregunta").textContent = "Pregunta no encontrada.";
     document.querySelector("button").disabled = true;
 
 }
+
+
+
+// ===============================
+// Mostrar vídeo al pulsar botón
+// ===============================
+
+function mostrarVideo() {
+
+    let aviso = document.getElementById("avisoVideo");
+    let video = document.getElementById("videoPrueba");
+
+
+    if (aviso) {
+        aviso.style.display = "none";
+    }
+
+
+    if (video) {
+
+        video.style.display = "block";
+
+        video.play();
+
+    }
+
+}
+
+
 
 // ===============================
 // Normalizar texto
@@ -73,6 +147,8 @@ function normalizar(texto) {
 
 }
 
+
+
 // ===============================
 // Comprobar respuesta
 // ===============================
@@ -82,21 +158,26 @@ function comprobar() {
     if (!datos)
         return;
 
+
     let codigoUsuario = normalizar(
         document.getElementById("codigo").value
     );
+
 
     let respuestaUsuario = normalizar(
         document.getElementById("respuesta").value
     );
 
+
     let equipoEncontrado = null;
+
 
     // Buscar el equipo correspondiente
     for (const equipo of Object.values(equipos)) {
 
         if (!equipo.pruebas[id])
             continue;
+
 
         if (
             normalizar(equipo.pruebas[id].codigoEntrada) === codigoUsuario
@@ -109,7 +190,10 @@ function comprobar() {
 
     }
 
+
     let respuestaCorrecta = normalizar(datos.respuesta);
+
+
 
     // ===========================
     // RESPUESTA CORRECTA
@@ -119,6 +203,7 @@ function comprobar() {
         equipoEncontrado &&
         respuestaUsuario === respuestaCorrecta
     ) {
+
 
         document.getElementById("resultado").innerHTML = `
 
@@ -130,9 +215,11 @@ padding:25px;
 margin-top:30px;
 text-align:center;">
 
+
 <h2 style="color:#8cff8c;margin-top:0;">
 🧠 DIAGNÓSTICO COMPLETADO
 </h2>
+
 
 <p style="font-size:24px;">
 📍<br>
@@ -140,7 +227,9 @@ text-align:center;">
 ${equipoEncontrado.pruebas[id].coordenada}
 </p>
 
+
 <hr>
+
 
 <p style="font-size:24px;">
 🔑<br>
@@ -148,17 +237,21 @@ ${equipoEncontrado.pruebas[id].coordenada}
 ${equipoEncontrado.pruebas[id].codigoSalida}
 </p>
 
+
 </div>
 
 `;
 
     }
 
+
+
     // ===========================
     // RESPUESTA INCORRECTA
     // ===========================
 
     else {
+
 
         document.getElementById("resultado").innerHTML = `
 
@@ -181,6 +274,8 @@ font-weight:bold;">
 
 }
 
+
+
 // ===============================
 // ENTER EN EL CÓDIGO
 // ===============================
@@ -193,6 +288,8 @@ document
             comprobar();
 
     });
+
+
 
 // ===============================
 // ENTER EN LA RESPUESTA
