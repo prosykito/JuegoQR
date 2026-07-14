@@ -1159,64 +1159,64 @@ equipo17: {
 
         // QR1 (primera prueba)
         1: {
-            codigoEntrada: "6294",
-            codigoSalida: "8157",
+            codigoEntrada: "4487",
+            codigoSalida: "6906",
             coordenada: "QR2"
         },
 
         // QR2 (segunda prueba)
         2: {
-            codigoEntrada: "8157",
-            codigoSalida: "4036",
+            codigoEntrada: "6906",
+            codigoSalida: "2906",
             coordenada: "QR3"
         },
 
         // QR3 (tercera prueba)
         3: {
-            codigoEntrada: "4036",
-            codigoSalida: "9725",
+            codigoEntrada: "2906",
+            codigoSalida: "7012",
             coordenada: "GRANDE1"
         },
 
         // QR4 (cuarta prueba, después de GRANDE1)
         4: {
-            codigoEntrada: "9725",
-            codigoSalida: "5841",
+            codigoEntrada: "3761",
+            codigoSalida: "9096",
             coordenada: "QR5"
         },
 
         // QR5 (quinta prueba)
         5: {
-            codigoEntrada: "5841",
-            codigoSalida: "2369",
+            codigoEntrada: "9096",
+            codigoSalida: "7636",
             coordenada: "QR6"
         },
 
         // QR6 (sexta prueba)
         6: {
-            codigoEntrada: "2369",
-            codigoSalida: "7483",
+            codigoEntrada: "7636",
+            codigoSalida: "2113",
             coordenada: "GRANDE2"
         },
 
         // QR7 (séptima prueba, después de GRANDE2)
         7: {
-            codigoEntrada: "7483",
-            codigoSalida: "1596",
+            codigoEntrada: "7052",
+            codigoSalida: "1435",
             coordenada: "QR8"
         },
 
         // QR8 (octava prueba)
         8: {
-            codigoEntrada: "1596",
-            codigoSalida: "8247",
+            codigoEntrada: "1435",
+            codigoSalida: "3551",
             coordenada: "QR9"
         },
 
         // QR9 (novena prueba, última prueba antes de GRANDE3)
         9: {
-            codigoEntrada: "8247",
-            codigoSalida: "6905",
+            codigoEntrada: "3551",
+            codigoSalida: "7867",
             coordenada: "GRANDE3"
         }
 
