@@ -266,15 +266,15 @@ function comprobar() {
 
     actualizarEstadoEquipo(
 
-        equipoEncontrado.nombre,
+    equipoEncontrado.nombre,
 
-        Number(id),
+    "QR" + id,
 
-        equipoEncontrado.pruebas[id].coordenada,
+    equipoEncontrado.pruebas[id].coordenada,
 
-        equipoEncontrado.pruebas[id].codigoSalida
+    equipoEncontrado.pruebas[id].codigoSalida
 
-    );
+);
         document.getElementById("resultado").innerHTML = `
 
         <div style="
