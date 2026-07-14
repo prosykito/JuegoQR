@@ -143,6 +143,152 @@ equipo2: {
 
     }
 
-}
+},
+
+equipo3: {
+
+    nombre: "Equipo 3",
+
+    pruebas: {
+
+        // QR1
+        1: {
+            codigoEntrada: "5184",
+            codigoSalida: "7602",
+            coordenada: "QR2"
+        },
+
+        // QR2
+        2: {
+            codigoEntrada: "7602",
+            codigoSalida: "4931",
+            coordenada: "QR6"
+        },
+
+        // QR3 (primera prueba)
+        3: {
+            codigoEntrada: "2745",
+            codigoSalida: "5184",
+            coordenada: "GRANDE1"
+        },
+
+        // QR4
+        4: {
+            codigoEntrada: "8317",
+            codigoSalida: "6059",
+            coordenada: "QR5"
+        },
+
+        // QR5
+        5: {
+            codigoEntrada: "6059",
+            codigoSalida: "1928",
+            coordenada: "QR9"
+        },
+
+        // QR6
+        6: {
+            codigoEntrada: "4931",
+            codigoSalida: "8317",
+            coordenada: "GRANDE2"
+        },
+
+        // QR7
+        7: {
+            codigoEntrada: "4416",
+            codigoSalida: "9873",
+            coordenada: "QR8"
+        },
+
+        // QR8 (última prueba)
+        8: {
+            codigoEntrada: "9873",
+            codigoSalida: "2560",
+            coordenada: "FINAL"
+        },
+
+        // QR9
+        9: {
+            codigoEntrada: "1928",
+            codigoSalida: "4416",
+            coordenada: "GRANDE3"
+        }
+
+    }
+
+},
+
+equipo4: {
+
+    nombre: "Equipo 4",
+
+    pruebas: {
+
+        // QR1
+        1: {
+            codigoEntrada: "6842",
+            codigoSalida: "1359",
+            coordenada: "QR2"
+        },
+
+        // QR2
+        2: {
+            codigoEntrada: "1359",
+            codigoSalida: "9074",
+            coordenada: "QR3"
+        },
+
+        // QR3
+        3: {
+            codigoEntrada: "9074",
+            codigoSalida: "4521",
+            coordenada: "GRANDE2"
+        },
+
+        // QR4
+        4: {
+            codigoEntrada: "4521",
+            codigoSalida: "7186",
+            coordenada: "QR5"
+        },
+
+        // QR5
+        5: {
+            codigoEntrada: "7186",
+            codigoSalida: "2643",
+            coordenada: "QR6"
+        },
+
+        // QR6
+        6: {
+            codigoEntrada: "2643",
+            codigoSalida: "8390",
+            coordenada: "GRANDE3"
+        },
+
+        // QR7
+        7: {
+            codigoEntrada: "8390",
+            codigoSalida: "5712",
+            coordenada: "QR8"
+        },
+
+        // QR8
+        8: {
+            codigoEntrada: "5712",
+            codigoSalida: "9465",
+            coordenada: "QR9"
+        },
+
+        // QR9
+        9: {
+            codigoEntrada: "9465",
+            codigoSalida: "3187",
+            coordenada: "FINAL"
+        }
+
+    }
+
+}    
 
 };
