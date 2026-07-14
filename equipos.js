@@ -439,64 +439,64 @@ equipo7: {
 
         // QR1 (tercera prueba, después de GRANDE1)
         1: {
-            codigoEntrada: "6249",
-            codigoSalida: "3815",
+            codigoEntrada: "6665",
+            codigoSalida: "7345",
             coordenada: "QR2"
         },
 
         // QR2 (cuarta prueba)
         2: {
-            codigoEntrada: "3815",
-            codigoSalida: "9074",
+            codigoEntrada: "7345",
+            codigoSalida: "4828",
             coordenada: "QR6"
         },
 
         // QR3 (primera prueba)
         3: {
-            codigoEntrada: "9074",
-            codigoSalida: "6249",
+            codigoEntrada: "9842",
+            codigoSalida: "2529",
             coordenada: "GRANDE1"
         },
 
         // QR4 (séptima prueba, después de GRANDE2)
         4: {
-            codigoEntrada: "4528",
-            codigoSalida: "7396",
+            codigoEntrada: "2768",
+            codigoSalida: "2645",
             coordenada: "QR5"
         },
 
         // QR5 (octava prueba)
         5: {
-            codigoEntrada: "7396",
-            codigoSalida: "1852",
+            codigoEntrada: "2645",
+            codigoSalida: "7069",
             coordenada: "QR9"
         },
 
         // QR6 (quinta prueba)
         6: {
-            codigoEntrada: "1852",
-            codigoSalida: "4528",
+            codigoEntrada: "4828",
+            codigoSalida: "5817",
             coordenada: "GRANDE2"
         },
 
         // QR7 (undécima prueba, después de GRANDE3)
         7: {
-            codigoEntrada: "8163",
-            codigoSalida: "2947",
+            codigoEntrada: "3408",
+            codigoSalida: "2785",
             coordenada: "QR8"
         },
 
         // QR8 (duodécima prueba, última prueba)
         8: {
-            codigoEntrada: "2947",
-            codigoSalida: "5638",
+            codigoEntrada: "2785",
+            codigoSalida: "3647",
             coordenada: "FINAL"
         },
 
         // QR9 (novena prueba, antes de GRANDE3)
         9: {
-            codigoEntrada: "1852",
-            codigoSalida: "8163",
+            codigoEntrada: "7069",
+            codigoSalida: "4397",
             coordenada: "GRANDE3"
         }
 
@@ -511,64 +511,64 @@ equipo8: {
 
         // QR1 (primera prueba, después de GRANDE1)
         1: {
-            codigoEntrada: "4826",
-            codigoSalida: "9173",
+            codigoEntrada: "7612",
+            codigoSalida: "1439",
             coordenada: "QR2"
         },
 
         // QR2 (segunda prueba)
         2: {
-            codigoEntrada: "9173",
-            codigoSalida: "3658",
+            codigoEntrada: "1439",
+            codigoSalida: "3560",
             coordenada: "QR3"
         },
 
         // QR3 (tercera prueba)
         3: {
-            codigoEntrada: "3658",
-            codigoSalida: "7402",
+            codigoEntrada: "3560",
+            codigoSalida: "1020",
             coordenada: "GRANDE2"
         },
 
         // QR4 (cuarta prueba, después de GRANDE2)
         4: {
-            codigoEntrada: "7402",
-            codigoSalida: "1589",
+            codigoEntrada: "8684",
+            codigoSalida: "1996",
             coordenada: "QR5"
         },
 
         // QR5 (quinta prueba)
         5: {
-            codigoEntrada: "1589",
-            codigoSalida: "6247",
+            codigoEntrada: "1996",
+            codigoSalida: "5402",
             coordenada: "QR6"
         },
 
         // QR6 (sexta prueba)
         6: {
-            codigoEntrada: "6247",
-            codigoSalida: "8935",
+            codigoEntrada: "5402",
+            codigoSalida: "8597",
             coordenada: "GRANDE3"
         },
 
         // QR7 (séptima prueba, después de GRANDE3)
         7: {
-            codigoEntrada: "8935",
-            codigoSalida: "2764",
+            codigoEntrada: "6164",
+            codigoSalida: "6263",
             coordenada: "QR8"
         },
 
         // QR8 (octava prueba)
         8: {
-            codigoEntrada: "2764",
-            codigoSalida: "5391",
+            codigoEntrada: "6263",
+            codigoSalida: "5259",
             coordenada: "QR9"
         },
 
         // QR9 (novena prueba, última prueba)
         9: {
-            codigoEntrada: "5391",
-            codigoSalida: "8046",
+            codigoEntrada: "5259",
+            codigoSalida: "3140",
             coordenada: "FINAL"
         }
 
