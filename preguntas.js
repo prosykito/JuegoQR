@@ -64,10 +64,7 @@ const preguntas = {
     mensaje:"exitazo codigo 4",
 
     imagen: "",
-    video: "video_prueba.mp4",
-    mensajeVideo: "🎬 PRUEBA DE VÍDEO\n\nCuando todo el equipo esté preparado pulsa el botón para comenzar la prueba.",
-    botonVideo: "▶ VER VÍDEO"
-
+    video: "video_prueba.mp4"
     },
     9: {
     pregunta:"4+4",
