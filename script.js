@@ -12,6 +12,7 @@ if (datos) {
     document.querySelector("button").disabled = true;
 }
 
+// Función para ignorar mayúsculas, acentos y espacios
 function normalizar(texto) {
 
     return texto
@@ -27,31 +28,69 @@ function comprobar() {
     if (!datos)
         return;
 
-   let respuestaUsuario = normalizar(
-    document.getElementById("respuesta").value
-);
+    // Leer datos introducidos
+    let codigoUsuario = normalizar(
+        document.getElementById("codigo").value
+    );
 
-let respuestaCorrecta = normalizar(
-    datos.respuesta
-);
+    let respuestaUsuario = normalizar(
+        document.getElementById("respuesta").value
+    );
 
-    if (respuestaUsuario === respuestaCorrecta) {
+    // Buscar el equipo que tenga ese código para esta prueba
+    let equipoEncontrado = null;
+
+    for (const equipo of Object.values(equipos)) {
+
+        if (!equipo.pruebas[id])
+            continue;
+
+        if (
+            normalizar(equipo.pruebas[id].codigoEntrada) === codigoUsuario
+        ) {
+            equipoEncontrado = equipo;
+            break;
+        }
+
+    }
+
+    // Comprobar respuesta
+    let respuestaCorrecta = normalizar(datos.respuesta);
+
+    if (equipoEncontrado && respuestaUsuario === respuestaCorrecta) {
 
         document.getElementById("resultado").innerHTML =
             "<span style='color:green;font-weight:bold;'>" +
-            datos.mensaje.replace(/\n/g, "<br>") +
+            "✅ PRUEBA SUPERADA<br><br>" +
+            "Siguiente coordenada:<br><b>" +
+            equipoEncontrado.pruebas[id].coordenada +
+            "</b><br><br>" +
+            "Nuevo código:<br><b>" +
+            equipoEncontrado.pruebas[id].codigoSalida +
+            "</b>" +
             "</span>";
 
     } else {
 
         document.getElementById("resultado").innerHTML =
-            "<span style='color:red;'>❌ Respuesta incorrecta.</span>";
+            "<span style='color:red;font-weight:bold;'>❌ Código o respuesta incorrectos.</span>";
 
     }
 
 }
 
-// Permite pulsar Enter
+// Pulsar Enter en el código
+document
+    .getElementById("codigo")
+    .addEventListener("keypress", function (e) {
+
+        if (e.key === "Enter") {
+            comprobar();
+        }
+
+    });
+
+// Pulsar Enter en la respuesta
 document
     .getElementById("respuesta")
     .addEventListener("keypress", function (e) {
