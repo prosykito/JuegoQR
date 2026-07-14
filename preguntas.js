@@ -35,7 +35,7 @@ const preguntas = {
     },
     5: {
         pregunta:"cuanto es 5+5",
-        respuesta:"s3gur1d4d",
+        respuesta:"10",
         mensaje:"bien codigo 5",
 
         imagen: "",
