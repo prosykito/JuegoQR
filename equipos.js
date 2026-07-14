@@ -331,7 +331,7 @@ equipo5: {
         // QR6 (sexta prueba)
         6: {
             codigoEntrada: "1964",
-            codigoSalida: "7428",
+            codigoSalida: "6064",
             coordenada: "GRANDE2"
         },
 
@@ -382,7 +382,7 @@ equipo6: {
         // QR3 (segunda prueba)
         3: {
             codigoEntrada: "4157",
-            codigoSalida: "5186",
+            codigoSalida: "1581",
             coordenada: "GRANDE1"
         },
 
@@ -403,7 +403,7 @@ equipo6: {
         // QR6 (sexta prueba)
         6: {
             codigoEntrada: "2918",
-            codigoSalida: "6803",
+            codigoSalida: "1033",
             coordenada: "GRANDE2"
         },
 
@@ -424,7 +424,7 @@ equipo6: {
         // QR9 (décima prueba, antes de GRANDE3)
         9: {
             codigoEntrada: "3649",
-            codigoSalida: "1465",
+            codigoSalida: "8642",
             coordenada: "GRANDE3"
         }
 
