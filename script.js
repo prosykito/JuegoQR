@@ -95,9 +95,31 @@ function comprobar() {
     } else {
 
         document.getElementById("resultado").innerHTML =
-            "<span style='color:red;font-weight:bold;'>❌ Código o respuesta incorrectos.</span>";
 
-    }
+`<div style="
+background:#1f4d1f;
+border:3px solid #4CAF50;
+padding:25px;
+border-radius:12px;
+margin-top:30px;">
+
+<h2 style="margin-top:0;color:#8cff8c;">
+✔ PRUEBA SUPERADA
+</h2>
+
+<p style="font-size:24px;">
+<b>📍 Siguiente coordenada</b><br><br>
+${equipoEncontrado.pruebas[id].coordenada}
+</p>
+
+<hr>
+
+<p style="font-size:24px;">
+<b>🔑 Nuevo código</b><br><br>
+${equipoEncontrado.pruebas[id].codigoSalida}
+</p>
+
+</div>`;
 
 }
 
