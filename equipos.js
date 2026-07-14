@@ -289,6 +289,79 @@ equipo4: {
 
     }
 
-}    
+},
+
+equipo5: {
+
+    nombre: "Equipo 5",
+
+    pruebas: {
+
+        // QR1
+        1: {
+            codigoEntrada: "7318",
+            codigoSalida: "2645",
+            coordenada: "QR2"
+        },
+
+        // QR2
+        2: {
+            codigoEntrada: "2645",
+            codigoSalida: "9801",
+            coordenada: "QR3"
+        },
+
+        // QR3
+        3: {
+            codigoEntrada: "9801",
+            codigoSalida: "4176",
+            coordenada: "GRANDE1"
+        },
+
+        // QR4
+        4: {
+            codigoEntrada: "4176",
+            codigoSalida: "8532",
+            coordenada: "QR5"
+        },
+
+        // QR5
+        5: {
+            codigoEntrada: "8532",
+            codigoSalida: "1964",
+            coordenada: "QR6"
+        },
+
+        // QR6
+        6: {
+            codigoEntrada: "1964",
+            codigoSalida: "7428",
+            coordenada: "GRANDE2"
+        },
+
+        // QR7
+        7: {
+            codigoEntrada: "7428",
+            codigoSalida: "3159",
+            coordenada: "QR8"
+        },
+
+        // QR8
+        8: {
+            codigoEntrada: "3159",
+            codigoSalida: "6847",
+            coordenada: "QR9"
+        },
+
+        // QR9
+        9: {
+            codigoEntrada: "6847",
+            codigoSalida: "5291",
+            coordenada: "GRANDE3"
+        }
+
+    }
+
+},
 
 };
