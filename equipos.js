@@ -23,7 +23,7 @@ equipo1: {
         // QR3 (tercera prueba)
         3: {
             codigoEntrada: "9801",
-            codigoSalida: "4176",
+            codigoSalida: "2165",
             coordenada: "GRANDE1"
         },
 
@@ -44,7 +44,7 @@ equipo1: {
         // QR6 (sexta prueba)
         6: {
             codigoEntrada: "1964",
-            codigoSalida: "7428",
+            codigoSalida: "2963",
             coordenada: "GRANDE2"
         },
 
@@ -94,7 +94,7 @@ equipo1: {
         // QR3 (segunda prueba)
         3: {
             codigoEntrada: "4157",
-            codigoSalida: "5186",
+            codigoSalida: "7014",
             coordenada: "GRANDE1"
         },
 
@@ -115,7 +115,7 @@ equipo1: {
         // QR6 (sexta prueba)
         6: {
             codigoEntrada: "2918",
-            codigoSalida: "6803",
+            codigoSalida: "2481",
             coordenada: "GRANDE2"
         },
 
@@ -136,7 +136,7 @@ equipo1: {
         // QR9 (décima prueba, antes de GRANDE3)
         9: {
             codigoEntrada: "3649",
-            codigoSalida: "1465",
+            codigoSalida: "9876",
             coordenada: "GRANDE3"
         }
 
@@ -166,7 +166,7 @@ equipo3: {
         // QR3 (primera prueba)
         3: {
             codigoEntrada: "9001",
-            codigoSalida: "1234",
+            codigoSalida: "2951",
             coordenada: "GRANDE1"
         },
 
@@ -187,7 +187,7 @@ equipo3: {
         // QR6 (quinta prueba)
         6: {
             codigoEntrada: "9012",
-            codigoSalida: "3456",
+            codigoSalida: "5386",
             coordenada: "GRANDE2"
         },
 
@@ -208,7 +208,7 @@ equipo3: {
         // QR9 (novena prueba, antes de GRANDE3)
         9: {
             codigoEntrada: "2345",
-            codigoSalida: "6789",
+            codigoSalida: "1216",
             coordenada: "GRANDE3"
         }
 
@@ -238,7 +238,7 @@ equipo4: {
         // QR3 (cuarta prueba)
         3: {
             codigoEntrada: "8642",
-            codigoSalida: "5791",
+            codigoSalida: "3591",
             coordenada: "GRANDE2"
         },
 
@@ -259,7 +259,7 @@ equipo4: {
         // QR6 (octava prueba)
         6: {
             codigoEntrada: "9183",
-            codigoSalida: "6754",
+            codigoSalida: "9971",
             coordenada: "GRANDE3"
         },
 
@@ -310,7 +310,7 @@ equipo5: {
         // QR3 (tercera prueba)
         3: {
             codigoEntrada: "9801",
-            codigoSalida: "4176",
+            codigoSalida: "8391",
             coordenada: "GRANDE1"
         },
 
