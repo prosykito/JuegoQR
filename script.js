@@ -6,7 +6,29 @@ const id = parametros.get("id");
 const datos = preguntas[id];
 
 if (datos) {
+
     document.getElementById("pregunta").textContent = datos.pregunta;
+
+    let multimedia = "";
+
+    if (datos.imagen && datos.imagen !== "") {
+
+        multimedia +=
+            `<img src="${datos.imagen}" style="max-width:100%;border-radius:10px;margin:20px 0;">`;
+
+    }
+
+    if (datos.video && datos.video !== "") {
+
+        multimedia +=
+            `<video controls style="width:100%;border-radius:10px;margin:20px 0;">
+                <source src="${datos.video}" type="video/mp4">
+            </video>`;
+
+    }
+
+    document.getElementById("multimedia").innerHTML = multimedia;
+
 } else {
     document.getElementById("pregunta").textContent = "Pregunta no encontrada.";
     document.querySelector("button").disabled = true;
