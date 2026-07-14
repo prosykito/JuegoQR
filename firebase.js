@@ -57,3 +57,14 @@ async function actualizarEstadoEquipo(
         });
 
 }
+async function reiniciarGymkana(){
+
+    let snapshot = await db.collection("equipos").get();
+
+    snapshot.forEach(async function(doc){
+
+        await doc.ref.delete();
+
+    });
+
+}
