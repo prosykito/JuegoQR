@@ -64,7 +64,7 @@ const preguntas = {
     mensaje:"exitazo codigo 4",
 
     imagen: "",
-    video: ""
+    video: "video-prueba.mp4"
 
     },
     9: {
