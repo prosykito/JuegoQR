@@ -186,7 +186,7 @@ equipo3: {
 
         // QR6 (quinta prueba)
         6: {
-            codigoEntrada: "99330",
+            codigoEntrada: "9330",
             codigoSalida: "6301",
             coordenada: "GRANDE2"
         },
