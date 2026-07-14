@@ -1,9 +1,15 @@
-// Obtener el parámetro ?id= de la URL
+// ===============================
+// Obtener la pregunta de la URL
+// ===============================
+
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 
-// Buscar la pregunta
 const datos = preguntas[id];
+
+// ===============================
+// Mostrar pregunta
+// ===============================
 
 if (datos) {
 
@@ -11,30 +17,52 @@ if (datos) {
 
     let multimedia = "";
 
+    // Imagen
     if (datos.imagen && datos.imagen !== "") {
 
-        multimedia +=
-            `<img src="${datos.imagen}" style="max-width:100%;border-radius:10px;margin:20px 0;">`;
+        multimedia += `
+            <img
+                src="${datos.imagen}"
+                style="
+                    width:100%;
+                    border-radius:10px;
+                    margin:20px 0;
+                ">
+        `;
 
     }
 
+    // Vídeo
     if (datos.video && datos.video !== "") {
 
-        multimedia +=
-            `<video controls style="width:100%;border-radius:10px;margin:20px 0;">
+        multimedia += `
+            <video
+                controls
+                style="
+                    width:100%;
+                    border-radius:10px;
+                    margin:20px 0;
+                ">
                 <source src="${datos.video}" type="video/mp4">
-            </video>`;
+            </video>
+        `;
 
     }
 
     document.getElementById("multimedia").innerHTML = multimedia;
 
-} else {
+}
+else {
+
     document.getElementById("pregunta").textContent = "Pregunta no encontrada.";
     document.querySelector("button").disabled = true;
+
 }
 
-// Función para ignorar mayúsculas, acentos y espacios
+// ===============================
+// Normalizar texto
+// ===============================
+
 function normalizar(texto) {
 
     return texto
@@ -45,12 +73,15 @@ function normalizar(texto) {
 
 }
 
+// ===============================
+// Comprobar respuesta
+// ===============================
+
 function comprobar() {
 
     if (!datos)
         return;
 
-    // Leer datos introducidos
     let codigoUsuario = normalizar(
         document.getElementById("codigo").value
     );
@@ -59,9 +90,9 @@ function comprobar() {
         document.getElementById("respuesta").value
     );
 
-    // Buscar el equipo que tenga ese código para esta prueba
     let equipoEncontrado = null;
 
+    // Buscar el equipo correspondiente
     for (const equipo of Object.values(equipos)) {
 
         if (!equipo.pruebas[id])
@@ -70,77 +101,108 @@ function comprobar() {
         if (
             normalizar(equipo.pruebas[id].codigoEntrada) === codigoUsuario
         ) {
+
             equipoEncontrado = equipo;
             break;
+
         }
 
     }
 
-    // Comprobar respuesta
     let respuestaCorrecta = normalizar(datos.respuesta);
 
-    if (equipoEncontrado && respuestaUsuario === respuestaCorrecta) {
+    // ===========================
+    // RESPUESTA CORRECTA
+    // ===========================
 
-        document.getElementById("resultado").innerHTML =
-            "<span style='color:green;font-weight:bold;'>" +
-            "✅ PRUEBA SUPERADA<br><br>" +
-            "Siguiente coordenada:<br><b>" +
-            equipoEncontrado.pruebas[id].coordenada +
-            "</b><br><br>" +
-            "Nuevo código:<br><b>" +
-            equipoEncontrado.pruebas[id].codigoSalida +
-            "</b>" +
-            "</span>";
+    if (
+        equipoEncontrado &&
+        respuestaUsuario === respuestaCorrecta
+    ) {
 
-    } else {
+        document.getElementById("resultado").innerHTML = `
 
-        document.getElementById("resultado").innerHTML =
-
-`<div style="
-background:#1f4d1f;
+<div style="
+background:#214221;
 border:3px solid #4CAF50;
-padding:25px;
 border-radius:12px;
-margin-top:30px;">
+padding:25px;
+margin-top:30px;
+text-align:center;">
 
-<h2 style="margin-top:0;color:#8cff8c;">
-✔ PRUEBA SUPERADA
+<h2 style="color:#8cff8c;margin-top:0;">
+🧠 DIAGNÓSTICO COMPLETADO
 </h2>
 
 <p style="font-size:24px;">
-<b>📍 Siguiente coordenada</b><br><br>
+📍<br>
+<b>Siguiente ubicación</b><br><br>
 ${equipoEncontrado.pruebas[id].coordenada}
 </p>
 
 <hr>
 
 <p style="font-size:24px;">
-<b>🔑 Nuevo código</b><br><br>
+🔑<br>
+<b>Código de acceso</b><br><br>
 ${equipoEncontrado.pruebas[id].codigoSalida}
 </p>
 
-</div>`;
+</div>
+
+`;
+
+    }
+
+    // ===========================
+    // RESPUESTA INCORRECTA
+    // ===========================
+
+    else {
+
+        document.getElementById("resultado").innerHTML = `
+
+<div style="
+background:#4a1b1b;
+border:3px solid #cc4444;
+border-radius:12px;
+padding:20px;
+margin-top:30px;
+text-align:center;
+font-weight:bold;">
+
+❌ Código o respuesta incorrectos.
+
+</div>
+
+`;
+
+    }
 
 }
 
-// Pulsar Enter en el código
+// ===============================
+// ENTER EN EL CÓDIGO
+// ===============================
+
 document
     .getElementById("codigo")
     .addEventListener("keypress", function (e) {
 
-        if (e.key === "Enter") {
+        if (e.key === "Enter")
             comprobar();
-        }
 
     });
 
-// Pulsar Enter en la respuesta
+// ===============================
+// ENTER EN LA RESPUESTA
+// ===============================
+
 document
     .getElementById("respuesta")
     .addEventListener("keypress", function (e) {
 
-        if (e.key === "Enter") {
+        if (e.key === "Enter")
             comprobar();
-        }
 
     });
