@@ -217,7 +217,7 @@ text-align:center;">
 
 
 <h2 style="color:#8cff8c;margin-top:0;">
-🧠 DIAGNÓSTICO COMPLETADO
+🧠 DIAGNÓSTICO SUPERADO
 </h2>
 
 
