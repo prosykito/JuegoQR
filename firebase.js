@@ -47,9 +47,7 @@ async function actualizarEstadoEquipo(
             equipo: nombreEquipo,
 
             ultimaPrueba: ultimaPrueba,
-
             siguientePrueba: siguientePrueba,
-
             codigoSiguiente: codigoSiguiente,
 
             ultimaActualizacion: Date.now()
