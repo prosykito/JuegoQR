@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 1.9");
+console.log("script.js VERSION 2.0");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
@@ -360,7 +360,7 @@ function comprobar(){
 
                 <br>
 
-                ❌ Diagnóstico incorrecto
+                ❌ El diagnóstico no es correcto
 
                 `;
 
@@ -388,7 +388,7 @@ function comprobar(){
 
                 <br><br>
 
-                ❌ La evaluación no coincide
+                ❌ El diagnóstico no es correcto
 
                 `;
 
