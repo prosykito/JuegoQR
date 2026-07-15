@@ -26,53 +26,53 @@ const preguntas = {
 },
 
     4: {
-        pregunta:"cuanto es 4+4",
-        respuesta: "8",
-        mensaje: "Exacto codigo 9",
+        pregunta:"Los ojos pueden engañarte asique confia unicamente en tus manos. Introduce la mano en la caja y descubre el diagnóstico oculto",
+        respuesta: "lunatico",
+        mensaje: "",
 
         imagen: "",
         video: ""
     },
     5: {
-        pregunta:"cuanto es 5+5",
-        respuesta:"10",
-        mensaje:"bien codigo 5",
+        pregunta:"En esta zona merodean pacientes muy violentos y han roto el código de seguridad. Tendreis que recomoponerlo para poder continuar",
+        respuesta:"s3gur1d4d",
+        mensaje:"",
 
         imagen: "",
         video: ""
     },
     6: {
-        pregunta:"cuanto es 6+6",
-        respuesta:"12",
-        mensaje:"exitazo codigo 4",
+        pregunta:"Esta es la ultima comunicacion recibida de una de nuestras enfermeras que consiguio escapar a duras penas de los pacientes. Necesitamos que recupereis su codigo de acceso",
+        respuesta:"0089-VALV-2026",
+        mensaje:"",
 
         imagen: "",
-        video: ""
+        video: "video_prueba.mp4"
 
     },
     7: {
-        pregunta:"Cuanto es 1+1",
-        respuesta:"2",
-        mensaje:"bravisimo",
+        pregunta:"La mayoria de los pacientes olvidaron su nombre pero jamas olvidaran una palabra. Buscad en el barrio de los quietos, entre los nombres de los que ya no están, que palabra se repite una y otra vez",
+        respuesta:"familia",
+        mensaje:"",
 
         imagen: "",
         video: ""
     },    
     8: {
-    pregunta:"cuanto es 2+2",
-    respuesta:"4",
-    mensaje:"exitazo codigo 4",
-
-    imagen: "",
-    video: "video_prueba.mp4"
+        pregunta:"La paciente 014 que escapó del psiquiatrico es la única que conoce la contraseña de la caja de seguridad del director. Necesitamos que averigueis cual es pero solo se la dira al que conozca la palabra clave",
+        respuesta:"4728",
+        mensaje:"",
+    
+        imagen: "",
+        video: ""
     },
     9: {
-    pregunta:"4+4",
-    respuesta:"8",
-    mensaje:"exitazo codigo 4",
-
-    imagen: "",
-    video: ""
+        pregunta:"4+4",
+        respuesta:"8",
+        mensaje:"exitazo codigo 4",
+    
+        imagen: "",
+        video: ""
 
     },
 };
