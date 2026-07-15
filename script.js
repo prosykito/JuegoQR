@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 1.1");
+console.log("script.js VERSION 1.2");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
@@ -268,7 +268,10 @@ function comprobar(){
 
     }
 
- /*   // Ocultar resultados anteriores
+   // ===============================
+// Mostrar validación
+// ===============================
+
 document.getElementById("credencial").style.display = "none";
 document.getElementById("credencial").innerHTML = "";
 
@@ -280,241 +283,169 @@ document.getElementById("resultado").innerHTML = `
 
 </div>
 
-`;*/
+`;
+
+
+
+// Esperar antes de mostrar el resultado
+setTimeout(function () {
 
     // ===============================
     // TODO CORRECTO
     // ===============================
 
-    setTimeout(function(){
-    if(
-
-        codigoCorrecto &&
-        respuestaCorrectaOK
-
-    ){
-
-
+    if (codigoCorrecto && respuestaCorrectaOK) {
 
         actualizarEstadoEquipo(
 
-
             equipoEncontrado.nombre,
 
-
-            "QR"+id,
-
+            "QR" + id,
 
             equipoEncontrado.pruebas[id].coordenada,
 
-
             equipoEncontrado.pruebas[id].codigoSalida
-
 
         );
 
-// Ocultar resultados anteriores
-document.getElementById("credencial").style.display = "none";
-document.getElementById("resultado").innerHTML = "";
 
-// Paso 1 - Validando
-document.getElementById("resultado").innerHTML = `
+        // Mostrar credencial
 
-<div class="resultado-ok">
+        document.getElementById("credencial").style.display = "block";
 
-    <h2>🔍 VALIDANDO EXPEDIENTE...</h2>
+        document.getElementById("credencial").innerHTML = `
 
-</div>
+            <div class="tarjeta">
 
-`;
+                <h2>HOSPITAL PSIQUIÁTRICO</h2>
 
+                <h2>SAN MARTÍN DE VALVENÍ</h2>
 
-// Paso 2 - Mostrar credencial
-setTimeout(function () {
+                <hr>
 
-    document.getElementById("credencial").style.display = "block";
+                <p><b>CREDENCIAL RECUPERADA</b></p>
 
-    document.getElementById("credencial").innerHTML = `
+                <p><b>Equipo:</b> ${equipoEncontrado.nombre}</p>
 
-    <div class="tarjeta">
+                <p><b>Expediente:</b> QR${id}</p>
 
-        <h2>HOSPITAL PSIQUIÁTRICO</h2>
+                <p><b>Estado:</b> ✔ AUTORIZADO</p>
 
-        <h2>SAN MARTÍN DE VALVENÍ</h2>
+            </div>
 
-        <hr>
-
-        <p><b>CREDENCIAL RECUPERADA</b></p>
-
-        <p><b>Equipo:</b> ${equipoEncontrado.nombre}</p>
-
-        <p><b>Expediente:</b> QR${id}</p>
-
-        <p><b>Estado:</b> ✔ AUTORIZADO</p>
-
-    </div>
-
-    `;
-
-},1000);
+        `;
 
 
-// Paso 3 - Mostrar ubicación y código
-setTimeout(function () {
+        // Mostrar diagnóstico
 
-    document.getElementById("resultado").innerHTML = `
+        document.getElementById("resultado").innerHTML = `
 
-    <div class="resultado-ok">
+            <div class="resultado-ok">
 
-        <h2>🧠 DIAGNÓSTICO COMPLETADO</h2>
+                <h2>🧠 DIAGNÓSTICO COMPLETADO</h2>
 
-        <p style="font-size:24px;">
+                <p style="font-size:24px;">
 
-            📍<br>
+                    📍<br>
 
-            <b>Siguiente ubicación</b>
+                    <b>Siguiente ubicación</b>
 
-            <br><br>
+                    <br><br>
 
-            ${equipoEncontrado.pruebas[id].coordenada}
+                    ${equipoEncontrado.pruebas[id].coordenada}
 
-        </p>
+                </p>
 
-        <hr>
+                <hr>
 
-        <p style="font-size:24px;">
+                <p style="font-size:24px;">
 
-            🔑<br>
+                    🔑<br>
 
-            <b>Código de acceso</b>
+                    <b>Código de acceso</b>
 
-            <br><br>
+                    <br><br>
 
-            ${equipoEncontrado.pruebas[id].codigoSalida}
+                    ${equipoEncontrado.pruebas[id].codigoSalida}
 
-        </p>
+                </p>
 
-    </div>
+            </div>
 
-    `;
-
-},2000);
+        `;
 
     }
+
     // ===============================
     // ERROR
     // ===============================
 
     else {
 
+        let mensajeError = "";
 
 
-        let mensajeError="";
-
-
-
-
-        if(
-
-            !codigoCorrecto &&
-            !respuestaCorrectaOK
-
-        ){
-
+        if (!codigoCorrecto && !respuestaCorrectaOK) {
 
             mensajeError = `
 
+                ⚠️ DIAGNÓSTICO FALLIDO
 
-            ⚠️ DIAGNÓSTICO FALLIDO
+                <br><br>
 
+                ❌ Código de acceso inválido
 
-            <br><br>
+                <br>
 
-
-            ❌ Código de acceso inválido
-
-
-            <br>
-
-
-            ❌ Diagnóstico incorrecto
-
-
+                ❌ Diagnóstico incorrecto
 
             `;
 
-
         }
 
-
-
-        else if(!codigoCorrecto){
-
-
+        else if (!codigoCorrecto) {
 
             mensajeError = `
 
+                ⚠️ ACCESO DENEGADO
 
-            ⚠️ ACCESO DENEGADO
+                <br><br>
 
-
-            <br><br>
-
-
-            ❌ Código de acceso inválido
-
-
+                ❌ Código de acceso inválido
 
             `;
 
-
         }
 
-
-
-        else if(!respuestaCorrectaOK){
-
-
+        else {
 
             mensajeError = `
 
+                ⚠️ DIAGNÓSTICO INCORRECTO
 
-            ⚠️ DIAGNÓSTICO INCORRECTO
+                <br><br>
 
-
-            <br><br>
-
-
-            ❌ La evaluación no coincide
-
-
+                ❌ La evaluación no coincide
 
             `;
 
-
         }
-
-
-
 
 
         document.getElementById("resultado").innerHTML = `
 
+            <div class="resultado-error">
 
+                ${mensajeError}
 
-        <div class="resultado-error">
-
-
-            ${mensajeError}
-
-
-        </div>
+            </div>
 
         `;
 
     }
 
-},800);
+}, 800);
+
 }
 
 // ===============================
