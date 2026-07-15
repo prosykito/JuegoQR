@@ -8,7 +8,7 @@ const preguntas = {
         video: ""
 },
 
-    2: {
+    3: {
         pregunta: "Entre todos los pacientes hubo uno que repetía constantemente :'San Martín, guarda secretos' ¿En qué fecha ocurrió?",
         respuesta: "28/09/82",
         mensaje: "",
@@ -16,7 +16,7 @@ const preguntas = {
         imagen: "",
         video: ""
     },
-    3: {
+    4: {
         pregunta: "En el ala oeste del asilo aprendimos que la locura no se mide en milímetros, si no en la presión que ejerce el alma sobre el suelo. El delirio te vuelve ligero como el humo; la culpa, pesa como el plomo. Buscad el gran juez inanimado de San Martín de Valvení. Es un frio altar gris empotrado en la tierra, diseñado para que los hombres confiesen su carga sin decir una sola palabra. Carece de ojos, pero dictamina sentencias mudas usando solo números que emergen del suelo. Vuestra pista no está en las alturas, sino al ras del suelo, allí donde los frutos de la tierra y los monstruos de hierro se ven obligados a detener su marcha para ser desvestidos de su masa. Si os situáis sobre el juez, sabréis vuestra condena; si encontráis su ranura, hallareis vuestra salida. El código no se esconde en el aire, si no bajo los pies del gigante que descansa.  Buscad ese lugar y hallareis el código oculto",
         respuesta: "3az87",
         mensaje: "",
@@ -25,7 +25,7 @@ const preguntas = {
         video: ""
 },
 
-    4: {
+    2: {
         pregunta:"Los ojos pueden engañarte asique confía únicamente en tus manos. Introduce la mano en la caja y descubre el diagnóstico oculto",
         respuesta: "lunatico",
         mensaje: "",
