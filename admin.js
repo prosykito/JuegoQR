@@ -12,20 +12,16 @@ db.collection("equipos")
         );
 
         let minutos = Math.floor(segundos / 60);
-
         segundos %= 60;
 
         let color = "verde";
 
-        if(minutos >= 10)
+        if (minutos >= 10)
             color = "rojo";
-
-        else if(minutos >=5)
+        else if (minutos >= 5)
             color = "amarillo";
 
-
         html += `
-
         <tr>
 
             <td>${equipo.equipo}</td>
@@ -39,7 +35,6 @@ db.collection("equipos")
             </td>
 
         </tr>
-
         `;
 
     });
