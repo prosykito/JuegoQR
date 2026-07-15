@@ -403,7 +403,7 @@ button.diagnostico{
 /* ===============================
    CREDENCIAL
 ================================ */
-
+/*
 #credencial{
 
     display:none;
@@ -466,6 +466,163 @@ button.diagnostico{
     margin:12px 0;
 
     font-size:22px;
+
+}*/
+
+/* ===============================
+   CREDENCIAL
+================================ */
+
+#credencial{
+
+    display:none;
+
+    margin-top:30px;
+
+}
+
+
+
+/* ===============================
+   TARJETA
+================================ */
+
+.tarjeta{
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8f4e9 0%,
+            #ece5d3 100%
+        );
+
+    color:#222;
+
+    border:3px solid #3f3f3f;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,.7);
+
+}
+
+
+
+/* ===============================
+   CABECERA METÁLICA
+================================ */
+
+.tarjeta .cabecera{
+
+    padding:18px;
+
+    text-align:center;
+
+    color:#222;
+
+    background:
+
+        linear-gradient(
+
+            to bottom,
+
+            #eeeeee 0%,
+
+            #bcbcbc 18%,
+
+            #fafafa 40%,
+
+            #969696 70%,
+
+            #d9d9d9 100%
+
+        );
+
+    border-bottom:2px solid #555;
+
+}
+
+
+
+.tarjeta .cabecera h2{
+
+    margin:4px;
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+/* ===============================
+   CUERPO
+================================ */
+
+.tarjeta .cuerpo{
+
+    padding:25px;
+
+}
+
+
+
+.tarjeta .cuerpo p{
+
+    margin:16px 0;
+
+    font-size:22px;
+
+}
+
+
+
+.tarjeta .cuerpo b{
+
+    display:inline-block;
+
+    width:150px;
+
+}
+
+
+
+/* ===============================
+   SELLO
+================================ */
+
+.sello{
+
+    width:190px;
+
+    margin:30px auto 10px auto;
+
+    padding:14px;
+
+    text-align:center;
+
+    border:5px solid #2f9e44;
+
+    border-radius:50px;
+
+    color:#2f9e44;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    transform:rotate(-8deg);
+
+    background:rgba(47,158,68,.08);
+
+    box-shadow:
+
+        inset 0 0 12px rgba(47,158,68,.25);
 
 }
 
