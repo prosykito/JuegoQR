@@ -420,7 +420,7 @@ function comprobar(){
             mensajeError = `
 
 
-            ⚠️ PROTOCOLO FALLIDO
+            ⚠️ DIAGNÓSTICO FALLIDO
 
 
             <br><br>
