@@ -9,10 +9,12 @@
     <style>
 
         body{
-            font-family:Arial;
+
+            font-family: Arial;
             background:#1b1b1b;
             color:white;
             padding:20px;
+
         }
 
         table{
@@ -22,7 +24,7 @@
 
         }
 
-        th,td{
+        th, td{
 
             border:1px solid #555;
             padding:12px;
@@ -75,41 +77,46 @@
 
 <body>
 
-<h1>Panel Organizador</h1>
+    <h1>Panel Organizador</h1>
 
-<button onclick="reiniciarGymkana()">
-🔄 Reiniciar Gymkana
-</button>
+    <button onclick="reiniciarGymkana()">
+        🔄 Reiniciar Gymkana
+    </button>
 
-<table>
+    <table>
 
-<thead>
+        <thead>
 
-<tr>
+            <tr>
 
-<tr>
-    <th>Equipo</th>
-    <th>Pruebas</th>
-    <th>Última prueba</th>
-    <th>Se dirige a</th>
-    <th>Tiempo</th>
-</tr>
+                <th>Equipo</th>
+                <th>Pruebas</th>
+                <th>Última prueba</th>
+                <th>Se dirige a</th>
+                <th>Tiempo</th>
 
-</tr>
+            </tr>
 
-</thead>
+        </thead>
 
-<tbody id="tablaEquipos">
+        <tbody id="tablaEquipos">
 
-</tbody>
+        </tbody>
 
-</table>
+    </table>
 
-<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore-compat.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore-compat.js"></script>
 
-<script src="firebase.js"></script>
-<script src="admin.js"></script>
+    <!-- Datos del juego -->
+    <script src="equipos.js"></script>
+
+    <!-- Firebase -->
+    <script src="firebase.js"></script>
+
+    <!-- Panel -->
+    <script src="admin.js"></script>
 
 </body>
 
