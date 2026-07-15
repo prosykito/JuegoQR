@@ -63,7 +63,7 @@ const preguntas = {
         respuesta:"4728",
         mensaje:"",
     
-        imagen: "",
+        imagen: "cartel_vieja.jpg",
         video: ""
     },
     9: {
