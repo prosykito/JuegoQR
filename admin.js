@@ -47,4 +47,3 @@ db.collection("equipos")
     document.getElementById("tablaEquipos").innerHTML = html;
 
 });
-});
