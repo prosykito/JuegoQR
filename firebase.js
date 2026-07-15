@@ -54,7 +54,7 @@ async function actualizarEstadoEquipo(
 
         });
 
-}*/
+}
 // =====================================
 // Actualizar estado del equipo
 // =====================================
@@ -87,6 +87,59 @@ async function actualizarEstadoEquipo(
         {
             merge:true
         });
+
+}*/
+// =====================================
+// Actualizar estado del equipo
+// =====================================
+
+async function actualizarEstadoEquipo(
+
+    nombreEquipo,
+    ultimaPrueba,
+    siguientePrueba,
+    codigoSiguiente
+
+) {
+
+    const ref = db.collection("equipos").doc(nombreEquipo);
+
+    const documento = await ref.get();
+
+    let datos = {
+
+        equipo: nombreEquipo,
+
+        ultimaPrueba: ultimaPrueba,
+        siguientePrueba: siguientePrueba,
+        codigoSiguiente: codigoSiguiente,
+
+        ultimaActualizacion: Date.now()
+
+    };
+
+    // Si ya existe el documento
+    if (documento.exists) {
+
+        let actual = documento.data();
+
+        // Solo incrementamos si realmente ha avanzado
+        if (actual.ultimaPrueba !== ultimaPrueba) {
+
+            datos.progreso =
+                firebase.firestore.FieldValue.increment(1);
+
+        }
+
+    }
+    else {
+
+        // Primer registro del equipo
+        datos.progreso = 1;
+
+    }
+
+    await ref.set(datos, { merge: true });
 
 }
 async function reiniciarGymkana(){
