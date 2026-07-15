@@ -1,63 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego QR</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Hospital Psiquiátrico San Martín de Valvení
+    </title>
 
     <link rel="stylesheet" href="estilo.css">
+
 </head>
 
 <body>
 
-    <div class="contenedor">
+<div class="contenedor">
 
-        <h1 id="titulo">HOSPITAL PSIQUIÁTRICO SAN MARTÍN DE VALVENÍ</h1>
+    <!-- ========================= -->
+    <!-- CABECERA                  -->
+    <!-- ========================= -->
+
+    <div class="cabecera">
+
+        <img src="hospital.jpg" alt="Hospital">
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- CONTENIDO                 -->
+    <!-- ========================= -->
+
+    <div class="contenido">
+
+        <h1>
+
+            HOSPITAL PSIQUIÁTRICO<br>
+
+            SAN MARTÍN DE VALVENÍ
+
+        </h1>
+
+
+        <div class="subtitulo">
+
+            Expediente de evaluación psiquiátrica
+
+        </div>
+
 
         <p id="pregunta">
+
             Cargando...
+
         </p>
 
+
         <div id="multimedia"></div>
-        
-        <label><b>Código</b></label>
+
+
+        <label>
+
+            <b>Código de acceso</b>
+
+        </label>
+
 
         <input
-        type="text"
-        id="codigo"
-        placeholder="Código recibido">
-        
-        <br><br>
-        
-        <label><b>Respuesta</b></label>
-        
-        <input
-        type="text"
-        id="respuesta"
-        placeholder="Escribe la respuesta">
+
+            type="text"
+
+            id="codigo"
+
+            placeholder="Introduce el código"
+
+        >
+
 
         <br><br>
+
+
+        <label>
+
+            <b>Diagnóstico</b>
+
+        </label>
+
+
+        <input
+
+            type="text"
+
+            id="respuesta"
+
+            placeholder="Escribe la respuesta"
+
+        >
+
+
+        <br><br>
+
 
         <button onclick="comprobar()">
-            Comprobar
+
+            REALIZAR DIAGNÓSTICO
+
         </button>
+
 
         <p id="resultado"></p>
 
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app-compat.js"></script>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore-compat.js"></script>
 
-<!-- Modo pruebas -->
+<!-- Cambia aquí si quieres usar las preguntas finales -->
 <script src="preguntas.js"></script>
-
-<!-- Modo oficial -->
 <!-- <script src="preguntasbuenas.js"></script> -->
-    
+
 <script src="equipos.js"></script>
 <script src="firebase.js"></script>
 <script src="script.js"></script>
-    
+
 </body>
+
 </html>
