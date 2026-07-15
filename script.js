@@ -406,77 +406,8 @@ setTimeout(function () {
     `;
 
 },2000);
-       /* document.getElementById("resultado").innerHTML = `
 
-
-        <div class="resultado-ok">
-
-
-
-            <h2>
-
-                🧠 DIAGNÓSTICO COMPLETADO
-
-            </h2>
-
-
-
-
-            <p style="font-size:24px;">
-
-
-                📍<br>
-
-
-                <b>Siguiente ubicación</b>
-
-
-                <br><br>
-
-
-                ${equipoEncontrado.pruebas[id].coordenada}
-
-
-            </p>
-
-
-
-            <hr>
-
-
-
-            <p style="font-size:24px;">
-
-
-                🔑<br>
-
-
-                <b>Código de acceso</b>
-
-
-                <br><br>
-
-
-                ${equipoEncontrado.pruebas[id].codigoSalida}
-
-
-            </p>
-
-
-
-        </div>
-
-
-        `;
-
-
-
-    }*/
-
-
-
-
-
+    }
     // ===============================
     // ERROR
     // ===============================
