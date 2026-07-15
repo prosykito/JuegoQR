@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 1.3");
+console.log("script.js VERSION 1.5");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
@@ -315,7 +315,7 @@ setTimeout(function () {
 
         document.getElementById("credencial").innerHTML = `
 
-            <div class="tarjeta">
+            /*<div class="tarjeta">
 
                 <h2>HOSPITAL PSIQUIÁTRICO</h2>
 
@@ -331,7 +331,50 @@ setTimeout(function () {
 
                 <p><b>Estado:</b> ✔ AUTORIZADO</p>
 
-            </div>
+            </div>*/
+            <div class="tarjeta">
+
+    <div class="cabecera">
+
+        <h2>🏥 HOSPITAL PSIQUIÁTRICO</h2>
+
+        <h2>SAN MARTÍN DE VALVENÍ</h2>
+
+    </div>
+
+    <div class="cuerpo">
+
+        <p style="text-align:center;font-size:24px;font-weight:bold;">
+
+            EXPEDIENTE RECUPERADO
+
+        </p>
+
+        <p>
+
+            <b>Equipo</b>
+
+            ${equipoEncontrado.nombre}
+
+        </p>
+
+        <p>
+
+            <b>Expediente</b>
+
+            SMV-QR${String(id).padStart(2,"0")}
+
+        </p>
+
+        <div class="sello">
+
+            ✔ AUTORIZADO
+
+        </div>
+
+    </div>
+
+</div>
 
         `;
 
