@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 1.8");
+console.log("script.js VERSION 1.9");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
@@ -328,99 +328,6 @@ setTimeout(function () {
         );
 
 
-        // Mostrar credencial
-
-        /*document.getElementById("credencial").style.display = "block";
-
-        document.getElementById("credencial").innerHTML = `
-           
-            <div class="tarjeta">
-
-    <div class="cabecera">
-
-        <h2>🏥 HOSPITAL PSIQUIÁTRICO</h2>
-
-        <h2>SAN MARTÍN DE VALVENÍ</h2>
-
-    </div>
-
-    <div class="cuerpo">
-
-        <p style="text-align:center;font-size:24px;font-weight:bold;">
-
-            EXPEDIENTE RECUPERADO
-
-        </p>
-
-        <p>
-
-            <b>Equipo</b>
-
-            ${equipoEncontrado.nombre}
-
-        </p>
-
-        <p>
-
-            <b>Expediente</b>
-
-            SMV-QR${String(id).padStart(2,"0")}
-
-        </p>
-
-        <div class="sello">
-
-            ✔ AUTORIZADO
-
-        </div>
-
-    </div>
-
-</div>
-
-        `;*/
-
-
-        // Mostrar diagnóstico
-
-       /* document.getElementById("resultado").innerHTML = `
-
-            <div class="resultado-ok">
-
-                <h2>🧠 DIAGNÓSTICO COMPLETADO</h2>
-
-                <p style="font-size:24px;">
-
-                    📍<br>
-
-                    <b>Siguiente ubicación</b>
-
-                    <br><br>
-
-                    ${equipoEncontrado.pruebas[id].coordenada}
-
-                </p>
-
-                <hr>
-
-                <p style="font-size:24px;">
-
-                    🔑<br>
-
-                    <b>Código de acceso</b>
-
-                    <br><br>
-
-                    ${equipoEncontrado.pruebas[id].codigoSalida}
-
-                </p>
-
-            </div>
-
-        `;
-
-    }*/
-
         document.getElementById("expedienteResultado").innerHTML = `
 
 <div class="expediente">
@@ -543,9 +450,9 @@ setTimeout(function () {
             `;
 
         }
+    }
 
-
-        /*document.getElementById("resultado").innerHTML = `*/
+       
         document.getElementById("expedienteResultado").innerHTML=`
 
 <div class="expediente">
