@@ -1,145 +1,174 @@
+/* ===============================
+   FONDO
+================================ */
+
 body{
 
     margin:0;
+    padding:25px;
+
     font-family:Arial, Helvetica, sans-serif;
 
     background:
-        linear-gradient(
-            rgba(15,15,15,.82),
-            rgba(15,15,15,.90)
-        ),
-        url("hospital.jpg");
+
+    linear-gradient(
+
+        rgba(70,45,30,.55),
+
+        rgba(20,10,10,.82)
+
+    ),
+
+    url("hospital.jpg");
 
     background-size:cover;
+
     background-position:center;
+
     background-attachment:fixed;
 
-    color:white;
+    color:#efe7d4;
 
 }
+
+
+/* ===============================
+   CONTENEDOR
+================================ */
 
 .contenedor{
 
-    max-width:850px;
+    max-width:900px;
 
-    margin:40px auto;
+    margin:auto;
 
-    background:rgba(30,30,30,.88);
+    background:rgba(65,20,20,.82);
 
-    border:2px solid #666;
+    border:2px solid #7a5555;
 
     border-radius:18px;
 
-    overflow:hidden;
-
-    box-shadow:0 0 35px black;
-
-}
-
-.cabecera{
-
-    position:relative;
-
-}
-
-.cabecera img{
-
-    width:100%;
-    display:block;
-    max-height:280px;
-    object-fit:cover;
-
-    filter:grayscale(100%) brightness(.75);
-
-}
-
-.cabecera::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    right:0;
-    bottom:0;
-
-    height:120px;
-
-    background:linear-gradient(transparent,#252525);
-
-}
-
-.contenido{
-
     padding:35px;
 
+    box-shadow:
+
+        0 0 25px rgba(0,0,0,.8),
+
+        inset 0 0 40px rgba(255,255,255,.03);
+
 }
+
+
+/* ===============================
+   TITULO
+================================ */
 
 h1{
 
     text-align:center;
 
-    margin-top:0;
+    color:#f6ebc8;
 
     font-size:34px;
 
-    letter-spacing:3px;
-
-    color:#ddd;
-
-}
-
-.subtitulo{
-
-    text-align:center;
-
-    color:#9ecf9e;
-
-    font-size:18px;
-
-    margin-top:-10px;
+    letter-spacing:2px;
 
     margin-bottom:35px;
 
+    text-shadow:
+
+        2px 2px 5px black;
+
 }
+
+
+/* ===============================
+   PREGUNTA
+================================ */
 
 #pregunta{
 
-    font-size:22px;
+    font-size:24px;
 
-    line-height:1.7;
+    line-height:1.8;
 
-    margin-bottom:35px;
+    color:#fff8e7;
+
+    margin-bottom:30px;
 
 }
+
+
+/* ===============================
+   IMAGENES
+================================ */
+
+#multimedia img{
+
+    width:100%;
+
+    border-radius:10px;
+
+    border:2px solid #6b5656;
+
+    margin:20px 0;
+
+}
+
+
+/* ===============================
+   VIDEOS
+================================ */
+
+video{
+
+    width:100%;
+
+    border-radius:10px;
+
+    border:2px solid #6b5656;
+
+}
+
+
+/* ===============================
+   ETIQUETAS
+================================ */
 
 label{
 
     display:block;
 
+    font-size:20px;
+
     margin-bottom:8px;
 
-    color:#cfcfcf;
+    color:#f1e6cb;
 
 }
+
+
+/* ===============================
+   CAJAS DE TEXTO
+================================ */
 
 input{
 
     width:100%;
 
-    padding:15px;
+    padding:16px;
 
-    font-size:18px;
+    box-sizing:border-box;
 
     border-radius:8px;
 
-    border:1px solid #555;
+    border:1px solid #9b7777;
 
-    background:#1d1d1d;
+    background:#2d2020;
 
     color:white;
 
-    box-sizing:border-box;
+    font-size:20px;
 
 }
 
@@ -147,29 +176,36 @@ input:focus{
 
     outline:none;
 
-    border-color:#76b676;
+    border-color:#d59b9b;
 
-    box-shadow:0 0 10px #3e8b3e;
+    box-shadow:0 0 10px rgba(255,180,180,.4);
 
 }
+
+
+/* ===============================
+   BOTON
+================================ */
 
 button{
 
     width:100%;
 
-    margin-top:25px;
+    margin-top:20px;
 
     padding:18px;
-
-    font-size:22px;
-
-    background:#355835;
-
-    color:white;
 
     border:none;
 
     border-radius:10px;
+
+    background:#8b2f2f;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
 
     cursor:pointer;
 
@@ -179,25 +215,56 @@ button{
 
 button:hover{
 
-    background:#4b7a4b;
+    background:#a93c3c;
 
 }
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* ===============================
+   MENSAJES
+================================ */
 
 #resultado{
 
-    margin-top:35px;
+    margin-top:30px;
 
 }
 
-img{
 
-    max-width:100%;
-    border-radius:10px;
+/* ===============================
+   MOVIL
+================================ */
 
-}
+@media(max-width:700px){
 
-video{
+    body{
 
-    border-radius:10px;
+        padding:10px;
+
+    }
+
+    .contenedor{
+
+        padding:20px;
+
+    }
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    #pregunta{
+
+        font-size:21px;
+
+    }
 
 }
