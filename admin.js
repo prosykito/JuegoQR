@@ -30,7 +30,7 @@ db.collection("equipos")
 
             <td>${equipo.equipo}</td>
 
-            <td>QR${equipo.ultimaPrueba}</td>
+            <td>${equipo.ultimaPrueba}</td>
 
             <td>${equipo.siguientePrueba}</td>
 
