@@ -51,24 +51,24 @@ const preguntas = {
 
     },
     7: {
-        pregunta:"Cuanto es 1+1",
-        respuesta:"2",
-        mensaje:"bravisimo",
+        pregunta:"Cuanto es 7+7",
+        respuesta:"14",
+        mensaje:"",
 
         imagen: "",
         video: ""
     },    
     8: {
-    pregunta:"cuanto es 2+2",
-    respuesta:"4",
+    pregunta:"cuanto es 8+8",
+    respuesta:"16",
     mensaje:"exitazo codigo 4",
 
     imagen: "",
     video: "video_prueba.mp4"
     },
     9: {
-    pregunta:"4+4",
-    respuesta:"8",
+    pregunta:"9+9",
+    respuesta:"18",
     mensaje:"exitazo codigo 4",
 
     imagen: "",
