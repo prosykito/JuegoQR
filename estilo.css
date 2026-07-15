@@ -367,19 +367,9 @@ button.diagnostico{
 
 #resultado{
 
-    text-align:center;
-
-    font-size:22px;
-
     margin-top:30px;
 
-    padding:20px;
-
-    border-radius:12px;
-
-    font-weight:bold;
-
-    transition:.3s;
+    text-align:center;
 
 }
 
@@ -400,9 +390,12 @@ button.diagnostico{
     );
 
 
-    border:
+    border:3px solid #4CAF50;
 
-    2px solid #78d38a;
+    border-radius:12px;
+
+
+    padding:25px;
 
 
     color:#eaffea;
@@ -410,10 +403,9 @@ button.diagnostico{
 
     box-shadow:
 
-    0 0 20px rgba(80,255,100,.4),
+    0 0 20px rgba(80,255,100,.35),
 
-    inset 0 0 15px rgba(255,255,255,.15);
-
+    inset 0 0 15px rgba(255,255,255,.1);
 
 }
 
@@ -430,29 +422,36 @@ button.diagnostico{
 
     linear-gradient(
         145deg,
-        #8b2f2f,
-        #350909
+        #6b2424,
+        #300808
     );
 
 
-    border:
+    border:3px solid #cc4444;
 
-    2px solid #d66;
+
+    border-radius:12px;
+
+
+    padding:20px;
 
 
     color:#ffeaea;
 
 
+    font-weight:bold;
+
+
+    font-size:22px;
+
+
     box-shadow:
 
-    0 0 20px rgba(255,50,50,.4),
+    0 0 20px rgba(255,50,50,.35),
 
     inset 0 0 15px rgba(255,255,255,.1);
 
-
 }
-
-
 
 /* ===============================
    MOVIL
