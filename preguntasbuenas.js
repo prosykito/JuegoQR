@@ -46,7 +46,7 @@ const preguntas = {
     },
 
     6: {
-        pregunta:"Esta es la última comunicación recibida de una de nuestras enfermeras, que consiguió escapar a duras penas de los pacientes. Necesitamos que recuperéis su código de acceso.",
+        pregunta:"Esta es la última comunicación recibida de una de nuestras enfermeras, que consiguió escapar a duras penas de los pacientes. Necesitamos que recuperéis su número de identificación.",
         respuesta:"0089-VALV-2026",
         mensaje:"",
 
