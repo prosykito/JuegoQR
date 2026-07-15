@@ -406,7 +406,7 @@ setTimeout(function () {
     `;
 
 },2000);
-       /* document.getElementById("resultado").innerHTML = `*/
+       /* document.getElementById("resultado").innerHTML = `
 
 
         <div class="resultado-ok">
@@ -471,7 +471,7 @@ setTimeout(function () {
 
 
 
-    }
+    }*/
 
 
 
