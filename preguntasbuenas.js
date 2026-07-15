@@ -73,7 +73,7 @@ const preguntas = {
         video: ""
     },
     9: {
-        pregunta:"La paciente 014 que escapó del psiquiátrico es la única que conoce la contraseña de la caja de seguridad del director. Necesitamos que averigüéis cual es pero solo se la dirá a aquel que conozca la palabra clave.",
+        pregunta:"La paciente 014 que escapó del psiquiátrico, es la única que conoce la contraseña de la caja de seguridad del director. Necesitamos que averigüéis cual es, pero solo se la dirá a aquel que conozca la palabra clave.",
         respuesta:"4728",
         mensaje:"",
     
