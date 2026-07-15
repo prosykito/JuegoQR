@@ -2,7 +2,7 @@
 // Obtener la pregunta de la URL
 // ===============================
 
-console.log("script.js VERSION 1.6");
+console.log("script.js VERSION 1.2");
 
 
 const parametros = new URLSearchParams(window.location.search);
@@ -320,12 +320,93 @@ function comprobar(){
 
         );
 
+// Ocultar resultados anteriores
+document.getElementById("credencial").style.display = "none";
+document.getElementById("resultado").innerHTML = "";
+
+// Paso 1 - Validando
+document.getElementById("resultado").innerHTML = `
+
+<div class="resultado-ok">
+
+    <h2>🔍 VALIDANDO EXPEDIENTE...</h2>
+
+</div>
+
+`;
 
 
+// Paso 2 - Mostrar credencial
+setTimeout(function () {
+
+    document.getElementById("credencial").style.display = "block";
+
+    document.getElementById("credencial").innerHTML = `
+
+    <div class="tarjeta">
+
+        <h2>HOSPITAL PSIQUIÁTRICO</h2>
+
+        <h2>SAN MARTÍN DE VALVENÍ</h2>
+
+        <hr>
+
+        <p><b>CREDENCIAL RECUPERADA</b></p>
+
+        <p><b>Equipo:</b> ${equipoEncontrado.nombre}</p>
+
+        <p><b>Expediente:</b> QR${id}</p>
+
+        <p><b>Estado:</b> ✔ AUTORIZADO</p>
+
+    </div>
+
+    `;
+
+},1000);
 
 
-        document.getElementById("resultado").innerHTML = `
+// Paso 3 - Mostrar ubicación y código
+setTimeout(function () {
 
+    document.getElementById("resultado").innerHTML = `
+
+    <div class="resultado-ok">
+
+        <h2>🧠 DIAGNÓSTICO COMPLETADO</h2>
+
+        <p style="font-size:24px;">
+
+            📍<br>
+
+            <b>Siguiente ubicación</b>
+
+            <br><br>
+
+            ${equipoEncontrado.pruebas[id].coordenada}
+
+        </p>
+
+        <hr>
+
+        <p style="font-size:24px;">
+
+            🔑<br>
+
+            <b>Código de acceso</b>
+
+            <br><br>
+
+            ${equipoEncontrado.pruebas[id].codigoSalida}
+
+        </p>
+
+    </div>
+
+    `;
+
+},2000);
+       /* document.getElementById("resultado").innerHTML = `*/
 
 
         <div class="resultado-ok">
