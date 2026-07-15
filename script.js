@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 1.7");
+console.log("script.js VERSION 1.8");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
@@ -545,15 +545,62 @@ setTimeout(function () {
         }
 
 
-        document.getElementById("resultado").innerHTML = `
+        /*document.getElementById("resultado").innerHTML = `*/
+        document.getElementById("expedienteResultado").innerHTML=`
 
-            <div class="resultado-error">
+<div class="expediente">
+
+    <div class="expedienteTitulo">
+
+        EXPEDIENTE CLÍNICO
+
+    </div>
+
+    <div class="expedienteCuerpo">
+
+        <p>
+
+            <b>Estado</b>
+
+            DENEGADO
+
+        </p>
+
+        <div class="linea"></div>
+
+        <div class="sello" style="
+
+            border-color:#cc4444;
+
+            color:#cc4444;
+
+        ">
+
+            ✖ DENEGADO
+
+        </div>
+
+        <div class="linea"></div>
+
+        <p style="text-align:center;">
+
+            ${mensajeError}
+
+        </p>
+
+    </div>
+
+</div>
+
+`;
+
+            /*<div class="resultado-error">
 
                 ${mensajeError}
 
             </div>
 
-        `;
+        `;*/
 
     }
 
