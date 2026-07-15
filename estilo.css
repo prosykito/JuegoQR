@@ -400,10 +400,11 @@ button.diagnostico{
 
 }
 
+
 /* ===============================
    CREDENCIAL
 ================================ */
-/*
+
 #credencial{
 
     display:none;
@@ -411,41 +412,59 @@ button.diagnostico{
     margin-top:30px;
 
 }
+/* ===============================
+   EXPEDIENTE
+================================ */
 
+#expedienteResultado{
 
-
-.tarjeta{
-
-    background:
-    linear-gradient(
-        145deg,
-        #4d2b2b,
-        #261414
-    );
-
-    border:2px solid #b08d57;
-
-    border-radius:15px;
-
-    padding:25px;
-
-    box-shadow:
-
-        0 0 25px rgba(0,0,0,.8),
-
-        inset 0 0 15px rgba(255,255,255,.08);
+    margin-top:30px;
 
 }
 
 
 
-.tarjeta h2{
+.expediente{
 
-    margin-top:0;
+    background:linear-gradient(
+        180deg,
+        #423030,
+        #2a1d1d
+    );
 
-    color:#f5e6bd;
+    border:2px solid #8b6a45;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 0 25px rgba(0,0,0,.8);
+
+}
+
+
+
+/* Placa superior */
+
+.expedienteTitulo{
+
+    background:linear-gradient(
+        180deg,
+        #d7d7d7,
+        #8b8b8b,
+        #d7d7d7
+    );
+
+    color:#222;
 
     text-align:center;
+
+    font-weight:bold;
+
+    padding:10px;
+
+    font-size:22px;
 
     letter-spacing:2px;
 
@@ -453,34 +472,47 @@ button.diagnostico{
 
 
 
-.tarjeta hr{
+/* Cuerpo */
 
-    border:1px solid #8d6d3d;
+.expedienteCuerpo{
+
+    padding:25px;
 
 }
 
 
 
-.tarjeta p{
-
-    margin:12px 0;
+.expedienteCuerpo p{
 
     font-size:22px;
 
-}*/
-
-/* ===============================
-   CREDENCIAL
-================================ */
-
-#credencial{
-
-    display:none;
-
-    margin-top:30px;
+    margin:14px 0;
 
 }
 
+
+
+.expedienteCuerpo b{
+
+    display:inline-block;
+
+    width:160px;
+
+    color:#e6d5ae;
+
+}
+
+
+
+/* Separadores */
+
+.linea{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin:18px 0;
+
+}
 
 
 /* ===============================
