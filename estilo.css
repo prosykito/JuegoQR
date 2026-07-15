@@ -179,24 +179,6 @@ video{
 
 }
 
-
-
-/* ===============================
-   ETIQUETAS
-================================ */
-
-/*label{
-
-    display:block;
-
-    margin-top:20px;
-
-    font-size:20px;
-
-    color:#f5e6bd;
-
-}*/
-
 /* ===============================
    ETIQUETAS EXPEDIENTE
 ================================ */
@@ -229,49 +211,6 @@ label{
 
 
 }
-
-
-
-/* ===============================
-   CAMPOS
-================================ */
-
-/*input{
-
-    width:100%;
-
-    box-sizing:border-box;
-
-    padding:16px;
-
-    margin-top:8px;
-
-
-    background:#251818;
-
-    border:
-
-    1px solid #866060;
-
-
-    border-radius:10px;
-
-
-    color:white;
-
-    font-size:20px;
-
-}
-
-
-
-input:focus{
-
-    outline:none;
-
-    border-color:#d69b9b;
-
-}*/
 
 /* ===============================
    CAMPOS - EXPEDIENTE MÉDICO
@@ -458,6 +397,75 @@ button.diagnostico{
 
         1px 1px 3px black;
 
+
+}
+
+/* ===============================
+   CREDENCIAL
+================================ */
+
+#credencial{
+
+    display:none;
+
+    margin-top:30px;
+
+}
+
+
+
+.tarjeta{
+
+    background:
+    linear-gradient(
+        145deg,
+        #4d2b2b,
+        #261414
+    );
+
+    border:2px solid #b08d57;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:
+
+        0 0 25px rgba(0,0,0,.8),
+
+        inset 0 0 15px rgba(255,255,255,.08);
+
+}
+
+
+
+.tarjeta h2{
+
+    margin-top:0;
+
+    color:#f5e6bd;
+
+    text-align:center;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.tarjeta hr{
+
+    border:1px solid #8d6d3d;
+
+}
+
+
+
+.tarjeta p{
+
+    margin:12px 0;
+
+    font-size:22px;
 
 }
 
