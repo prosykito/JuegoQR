@@ -175,239 +175,182 @@ function normalizar(texto) {
 
 function comprobar(){
 
-
-
     if(!datos)
         return;
-
-
-
 
     let codigoUsuario =
         normalizar(
             document.getElementById("codigo").value
         );
 
-
-
     let respuestaUsuario =
         normalizar(
             document.getElementById("respuesta").value
         );
 
+    let equipoEncontrado = null;
 
-
-
-    let equipoEncontrado=null;
-
-
-
-
-    // ===============================
-    // Buscar equipo por código
-    // ===============================
-
+    // Buscar equipo
     for(const equipo of Object.values(equipos)){
-
-
 
         if(!equipo.pruebas[id])
             continue;
 
-
-
-
         if(
-
             normalizar(
                 equipo.pruebas[id].codigoEntrada
-            )
-            === codigoUsuario
-
+            ) === codigoUsuario
         ){
-
-
-            equipoEncontrado=equipo;
-
+            equipoEncontrado = equipo;
             break;
-
         }
 
-
     }
-
-
-
-
 
     let respuestaCorrecta =
         normalizar(datos.respuesta);
 
+    let codigoCorrecto = equipoEncontrado != null;
 
+    let respuestaCorrectaOK =
+        respuestaUsuario === respuestaCorrecta;
 
-
-    let codigoCorrecto=false;
-
-    let respuestaCorrectaOK=false;
-
-
-
-
-    if(equipoEncontrado){
-
-        codigoCorrecto=true;
-
-    }
-
-
-
-
-    if(respuestaUsuario===respuestaCorrecta){
-
-        respuestaCorrectaOK=true;
-
-    }
-
-   // ===============================
-// Mostrar validación
-// ===============================
-
-document.getElementById("expedienteResultado").innerHTML = `
-<div class="expediente">
-
-    <div class="expedienteTitulo">
-
-        EXPEDIENTE CLÍNICO
-
-    </div>
-
-    <div class="expedienteCuerpo">
-
-        <p style="text-align:center;font-size:24px;">
-
-            🔍 VALIDANDO EXPEDIENTE...
-
-        </p>
-
-    </div>
-
-</div>
-`;
-
-document.getElementById("resultado").innerHTML = `
-
-<div class="resultado-ok">
-
-    <h2>🔍 VALIDANDO EXPEDIENTE...</h2>
-
-</div>
-
-`;
-
-
-
-// Esperar antes de mostrar el resultado
-setTimeout(function () {
 
     // ===============================
-    // TODO CORRECTO
+    // VALIDANDO...
     // ===============================
 
-    if (codigoCorrecto && respuestaCorrectaOK) {
+    document.getElementById("expedienteResultado").innerHTML = `
 
-        actualizarEstadoEquipo(
+    <div class="expediente">
 
-            equipoEncontrado.nombre,
+        <div class="expedienteTitulo">
 
-            "QR" + id,
-
-            equipoEncontrado.pruebas[id].coordenada,
-
-            equipoEncontrado.pruebas[id].codigoSalida
-
-        );
-
-
-        document.getElementById("expedienteResultado").innerHTML = `
-
-<div class="expediente">
-
-    <div class="expedienteTitulo">
-
-        EXPEDIENTE CLÍNICO
-
-    </div>
-
-    <div class="expedienteCuerpo">
-
-        <p>
-
-            <b>Equipo</b>
-
-            ${equipoEncontrado.nombre}
-
-        </p>
-
-        <p>
-
-            <b>Expediente</b>
-
-            SMV-QR${String(id).padStart(2,"0")}
-
-        </p>
-
-        <p>
-
-            <b>Estado</b>
-
-            AUTORIZADO
-
-        </p>
-
-        <div class="linea"></div>
-
-        <div class="sello">
-
-            ✔ AUTORIZADO
+            EXPEDIENTE CLÍNICO
 
         </div>
 
-        <div class="linea"></div>
+        <div class="expedienteCuerpo">
 
-        <p>
+            <p style="text-align:center;font-size:24px;">
 
-            <b>Destino</b>
+                🔍 VALIDANDO EXPEDIENTE...
 
-            ${equipoEncontrado.pruebas[id].coordenada}
+            </p>
 
-        </p>
-
-        <p>
-
-            <b>Código</b>
-
-            ${equipoEncontrado.pruebas[id].codigoSalida}
-
-        </p>
+        </div>
 
     </div>
 
-</div>
+    `;
 
-`;
 
     // ===============================
-    // ERROR
+    // ESPERAR 2 SEGUNDOS
     // ===============================
 
-    else {
+    setTimeout(function(){
 
-        let mensajeError = "";
+        // ===============================
+        // CORRECTO
+        // ===============================
+
+        if(codigoCorrecto && respuestaCorrectaOK){
+
+            actualizarEstadoEquipo(
+
+                equipoEncontrado.nombre,
+
+                "QR"+id,
+
+                equipoEncontrado.pruebas[id].coordenada,
+
+                equipoEncontrado.pruebas[id].codigoSalida
+
+            );
 
 
-        if (!codigoCorrecto && !respuestaCorrectaOK) {
+            document.getElementById("expedienteResultado").innerHTML = `
 
-            mensajeError = `
+            <div class="expediente">
+
+                <div class="expedienteTitulo">
+
+                    EXPEDIENTE CLÍNICO
+
+                </div>
+
+                <div class="expedienteCuerpo">
+
+                    <p>
+
+                        <b>Equipo</b>
+
+                        ${equipoEncontrado.nombre}
+
+                    </p>
+
+                    <p>
+
+                        <b>Expediente</b>
+
+                        SMV-QR${String(id).padStart(2,"0")}
+
+                    </p>
+
+                    <p>
+
+                        <b>Estado</b>
+
+                        AUTORIZADO
+
+                    </p>
+
+                    <div class="linea"></div>
+
+                    <div class="sello">
+
+                        ✔ AUTORIZADO
+
+                    </div>
+
+                    <div class="linea"></div>
+
+                    <p>
+
+                        <b>Destino</b>
+
+                        ${equipoEncontrado.pruebas[id].coordenada}
+
+                    </p>
+
+                    <p>
+
+                        <b>Código</b>
+
+                        ${equipoEncontrado.pruebas[id].codigoSalida}
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            `;
+
+        }
+
+        // ===============================
+        // ERROR
+        // ===============================
+
+        else{
+
+            let mensajeError="";
+
+            if(!codigoCorrecto && !respuestaCorrectaOK){
+
+                mensajeError=`
 
                 ⚠️ DIAGNÓSTICO FALLIDO
 
@@ -419,13 +362,13 @@ setTimeout(function () {
 
                 ❌ Diagnóstico incorrecto
 
-            `;
+                `;
 
-        }
+            }
 
-        else if (!codigoCorrecto) {
+            else if(!codigoCorrecto){
 
-            mensajeError = `
+                mensajeError=`
 
                 ⚠️ ACCESO DENEGADO
 
@@ -433,13 +376,13 @@ setTimeout(function () {
 
                 ❌ Código de acceso inválido
 
-            `;
+                `;
 
-        }
+            }
 
-        else {
+            else{
 
-            mensajeError = `
+                mensajeError=`
 
                 ⚠️ DIAGNÓSTICO INCORRECTO
 
@@ -447,73 +390,60 @@ setTimeout(function () {
 
                 ❌ La evaluación no coincide
 
-            `;
+                `;
 
-        }
-    }
+            }
 
-       
-        document.getElementById("expedienteResultado").innerHTML=`
 
-<div class="expediente">
+            document.getElementById("expedienteResultado").innerHTML = `
 
-    <div class="expedienteTitulo">
+            <div class="expediente">
 
-        EXPEDIENTE CLÍNICO
+                <div class="expedienteTitulo">
 
-    </div>
+                    EXPEDIENTE CLÍNICO
 
-    <div class="expedienteCuerpo">
+                </div>
 
-        <p>
+                <div class="expedienteCuerpo">
 
-            <b>Estado</b>
+                    <p>
 
-            DENEGADO
+                        <b>Estado</b>
 
-        </p>
+                        DENEGADO
 
-        <div class="linea"></div>
+                    </p>
 
-        <div class="sello" style="
+                    <div class="linea"></div>
 
-            border-color:#cc4444;
+                    <div class="sello" style="border-color:#cc4444;color:#cc4444;">
 
-            color:#cc4444;
+                        ✖ DENEGADO
 
-        ">
+                    </div>
 
-            ✖ DENEGADO
+                    <div class="linea"></div>
 
-        </div>
+                    <p style="text-align:center;">
 
-        <div class="linea"></div>
+                        ${mensajeError}
 
-        <p style="text-align:center;">
+                    </p>
 
-            ${mensajeError}
-
-        </p>
-
-    </div>
-
-</div>
-
-`;
-
-            /*<div class="resultado-error">
-
-                ${mensajeError}
+                </div>
 
             </div>
 
-        `;*/
+            `;
 
-    }
+        }
 
-}, 2000);
+    },2000);
 
-}
+} 
+
+
 
 // ===============================
 // ENTER EN CÓDIGO
