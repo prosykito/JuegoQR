@@ -26,7 +26,7 @@ db.collection("test").doc("conexion").set({
 });
 
 
-// =====================================
+/*// =====================================
 // Actualizar estado del equipo
 // =====================================
 
@@ -52,6 +52,40 @@ async function actualizarEstadoEquipo(
 
             ultimaActualizacion: Date.now()
 
+        });
+
+}*/
+// =====================================
+// Actualizar estado del equipo
+// =====================================
+
+async function actualizarEstadoEquipo(
+
+    nombreEquipo,
+    ultimaPrueba,
+    siguientePrueba,
+    codigoSiguiente
+
+) {
+
+    await db
+        .collection("equipos")
+        .doc(nombreEquipo)
+        .set({
+
+            equipo: nombreEquipo,
+
+            ultimaPrueba: ultimaPrueba,
+            siguientePrueba: siguientePrueba,
+            codigoSiguiente: codigoSiguiente,
+
+            progreso: firebase.firestore.FieldValue.increment(1),
+
+            ultimaActualizacion: Date.now()
+
+        },
+        {
+            merge:true
         });
 
 }
