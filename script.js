@@ -515,6 +515,7 @@ setTimeout(function () {
     }
 
 },800);
+}
 
 // ===============================
 // ENTER EN CÓDIGO
