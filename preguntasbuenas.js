@@ -9,7 +9,7 @@ const preguntas = {
     },
 
     2: {
-        pregunta:"Los ojos pueden engañarte asique confía únicamente en tus manos. Introduce la mano en la caja y descubre el diagnóstico oculto.",
+        pregunta:"Los ojos pueden engañarte, así que confía únicamente en tus manos. Introduce la mano en la caja y descubre el diagnóstico oculto.",
         respuesta: "lunatico",
         mensaje: "",
 
