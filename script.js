@@ -272,8 +272,27 @@ function comprobar(){
 // Mostrar validación
 // ===============================
 
-document.getElementById("credencial").style.display = "none";
-document.getElementById("credencial").innerHTML = "";
+document.getElementById("expedienteResultado").innerHTML = `
+<div class="expediente">
+
+    <div class="expedienteTitulo">
+
+        EXPEDIENTE CLÍNICO
+
+    </div>
+
+    <div class="expedienteCuerpo">
+
+        <p style="text-align:center;font-size:24px;">
+
+            🔍 VALIDANDO EXPEDIENTE...
+
+        </p>
+
+    </div>
+
+</div>
+`;
 
 document.getElementById("resultado").innerHTML = `
 
@@ -311,7 +330,7 @@ setTimeout(function () {
 
         // Mostrar credencial
 
-        document.getElementById("credencial").style.display = "block";
+        /*document.getElementById("credencial").style.display = "block";
 
         document.getElementById("credencial").innerHTML = `
            
@@ -359,12 +378,12 @@ setTimeout(function () {
 
 </div>
 
-        `;
+        `;*/
 
 
         // Mostrar diagnóstico
 
-        document.getElementById("resultado").innerHTML = `
+       /* document.getElementById("resultado").innerHTML = `
 
             <div class="resultado-ok">
 
@@ -400,7 +419,75 @@ setTimeout(function () {
 
         `;
 
-    }
+    }*/
+
+        document.getElementById("expedienteResultado").innerHTML = `
+
+<div class="expediente">
+
+    <div class="expedienteTitulo">
+
+        EXPEDIENTE CLÍNICO
+
+    </div>
+
+    <div class="expedienteCuerpo">
+
+        <p>
+
+            <b>Equipo</b>
+
+            ${equipoEncontrado.nombre}
+
+        </p>
+
+        <p>
+
+            <b>Expediente</b>
+
+            SMV-QR${String(id).padStart(2,"0")}
+
+        </p>
+
+        <p>
+
+            <b>Estado</b>
+
+            AUTORIZADO
+
+        </p>
+
+        <div class="linea"></div>
+
+        <div class="sello">
+
+            ✔ AUTORIZADO
+
+        </div>
+
+        <div class="linea"></div>
+
+        <p>
+
+            <b>Destino</b>
+
+            ${equipoEncontrado.pruebas[id].coordenada}
+
+        </p>
+
+        <p>
+
+            <b>Código</b>
+
+            ${equipoEncontrado.pruebas[id].codigoSalida}
+
+        </p>
+
+    </div>
+
+</div>
+
+`;
 
     // ===============================
     // ERROR
