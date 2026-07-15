@@ -1,78 +1,155 @@
 body{
+
     margin:0;
-    padding:30px;
-    background:#1b1b1b;
     font-family:Arial, Helvetica, sans-serif;
-    color:#e5e5e5;
+
+    background:
+        linear-gradient(
+            rgba(15,15,15,.82),
+            rgba(15,15,15,.90)
+        ),
+        url("hospital.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+
 }
 
 .contenedor{
 
-    max-width:700px;
-    margin:auto;
+    max-width:850px;
 
-    background:#2a2a2a;
+    margin:40px auto;
 
-    border:3px solid #5f5f5f;
+    background:rgba(30,30,30,.88);
 
-    border-radius:15px;
+    border:2px solid #666;
 
-    padding:30px;
+    border-radius:18px;
 
-    box-shadow:0 0 30px rgba(0,0,0,.7);
+    overflow:hidden;
+
+    box-shadow:0 0 35px black;
+
+}
+
+.cabecera{
+
+    position:relative;
+
+}
+
+.cabecera img{
+
+    width:100%;
+    display:block;
+    max-height:280px;
+    object-fit:cover;
+
+    filter:grayscale(100%) brightness(.75);
+
+}
+
+.cabecera::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:120px;
+
+    background:linear-gradient(transparent,#252525);
+
+}
+
+.contenido{
+
+    padding:35px;
 
 }
 
 h1{
 
     text-align:center;
-    color:#d64d4d;
+
+    margin-top:0;
+
+    font-size:34px;
+
     letter-spacing:3px;
-    margin-bottom:25px;
+
+    color:#ddd;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#9ecf9e;
+
+    font-size:18px;
+
+    margin-top:-10px;
+
+    margin-bottom:35px;
 
 }
 
 #pregunta{
 
     font-size:22px;
-    line-height:1.5;
-    margin-bottom:30px;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
 
 }
 
 label{
 
-    font-weight:bold;
-    color:#cccccc;
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#cfcfcf;
 
 }
 
 input{
 
     width:100%;
-    box-sizing:border-box;
 
-    margin-top:8px;
-    margin-bottom:20px;
+    padding:15px;
 
-    padding:14px;
+    font-size:18px;
 
-    font-size:20px;
+    border-radius:8px;
 
-    background:#3b3b3b;
+    border:1px solid #555;
+
+    background:#1d1d1d;
 
     color:white;
 
-    border:2px solid #666;
-
-    border-radius:8px;
+    box-sizing:border-box;
 
 }
 
 input:focus{
 
     outline:none;
-    border-color:#d64d4d;
+
+    border-color:#76b676;
+
+    box-shadow:0 0 10px #3e8b3e;
 
 }
 
@@ -80,38 +157,47 @@ button{
 
     width:100%;
 
+    margin-top:25px;
+
     padding:18px;
-
-    background:#8b1e1e;
-
-    color:white;
 
     font-size:22px;
 
-    font-weight:bold;
+    background:#355835;
+
+    color:white;
 
     border:none;
 
-    border-radius:8px;
+    border-radius:10px;
 
     cursor:pointer;
 
-    transition:.2s;
+    transition:.25s;
 
 }
 
 button:hover{
 
-    background:#b52d2d;
+    background:#4b7a4b;
 
 }
 
 #resultado{
 
-    margin-top:30px;
+    margin-top:35px;
 
-    text-align:center;
+}
 
-    font-size:22px;
+img{
+
+    max-width:100%;
+    border-radius:10px;
+
+}
+
+video{
+
+    border-radius:10px;
 
 }
