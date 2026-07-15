@@ -2,7 +2,7 @@
 // Obtener la pregunta de la URL
 // ===============================
 
-console.log("script.js VERSION 1.2");
+console.log("script.js VERSION 1.3");
 
 
 const parametros = new URLSearchParams(window.location.search);
