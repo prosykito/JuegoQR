@@ -289,7 +289,7 @@ equipo4: {
 },
 equipo5: {
 
-    nombre: "Equipo 5",
+    nombre: "Equipo Hectorin",
 
     pruebas: {
 
