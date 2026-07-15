@@ -3,9 +3,22 @@ db.collection("equipos")
 
     let html = "";
 
+    let lista = [];
+
     snapshot.forEach(function(doc){
 
-        let equipo = doc.data();
+        lista.push(doc.data());
+
+    });
+
+    // Ordenar por progreso (mayor a menor)
+    lista.sort(function(a,b){
+
+        return (b.progreso || 0) - (a.progreso || 0);
+
+    });
+
+    lista.forEach(function(equipo){
 
         let segundos = Math.floor(
             (Date.now() - equipo.ultimaActualizacion) / 1000
@@ -22,9 +35,12 @@ db.collection("equipos")
             color = "amarillo";
 
         html += `
+
         <tr>
 
             <td>${equipo.equipo}</td>
+
+            <td>${equipo.progreso || 0}</td>
 
             <td>${equipo.ultimaPrueba}</td>
 
@@ -35,6 +51,7 @@ db.collection("equipos")
             </td>
 
         </tr>
+
         `;
 
     });
