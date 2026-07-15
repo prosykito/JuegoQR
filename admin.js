@@ -1,88 +1,11 @@
-function calcularPruebasCompletadas(nombreEquipo, siguientePrueba) {
-
-    let equipo = null;
-
-    // Buscar el equipo por su nombre
-    for (const datos of Object.values(equipos)) {
-
-        if (datos.nombre === nombreEquipo) {
-
-            equipo = datos;
-            break;
-
-        }
-
-    }
-
-    if (!equipo)
-        return 0;
-
-    let contador = 0;
-
-    for (let i = 1; i <= 9; i++) {
-
-        const prueba = equipo.pruebas[i];
-
-        if (prueba.coordenada === siguientePrueba)
-            return contador;
-
-        contador++;
-
-    }
-
-    if (siguientePrueba === "FINAL")
-        return 9;
-
-    return contador;
-
-}
-
-// ======================================
-// Escuchar Firebase
-// ======================================
-
 db.collection("equipos")
 .onSnapshot(function(snapshot){
 
-    let listaEquipos = [];
+    let html = "";
 
     snapshot.forEach(function(doc){
 
         let equipo = doc.data();
-
-        equipo.pruebasCompletadas = calcularPruebasCompletadas(
-            equipo.equipo,
-            equipo.siguientePrueba
-        );
-
-        listaEquipos.push(equipo);
-
-    });
-
-
-
-    // ======================================
-    // Ordenar por pruebas completadas
-    // ======================================
-
-    listaEquipos.sort(function(a,b){
-
-        if (b.pruebasCompletadas !== a.pruebasCompletadas)
-            return b.pruebasCompletadas - a.pruebasCompletadas;
-
-        return a.ultimaActualizacion - b.ultimaActualizacion;
-
-    });
-
-
-
-    // ======================================
-    // Dibujar tabla
-    // ======================================
-
-    let html = "";
-
-    listaEquipos.forEach(function(equipo){
 
         let segundos = Math.floor(
             (Date.now() - equipo.ultimaActualizacion) / 1000
@@ -96,6 +19,7 @@ db.collection("equipos")
 
         if(minutos >= 10)
             color = "rojo";
+
         else if(minutos >=5)
             color = "amarillo";
 
@@ -105,8 +29,6 @@ db.collection("equipos")
         <tr>
 
             <td>${equipo.equipo}</td>
-
-            <td>${equipo.pruebasCompletadas}</td>
 
             <td>${equipo.ultimaPrueba}</td>
 
@@ -124,4 +46,5 @@ db.collection("equipos")
 
     document.getElementById("tablaEquipos").innerHTML = html;
 
+});
 });
