@@ -45,7 +45,7 @@ equipo1: {
         6: {
             codigoEntrada: "8962",
             codigoSalida: "7928",
-            coordenada: "Ey vosotros! He hackeado el sistema de los enfermeros y necesito vuestra ayuda. En uno de los traslados al psiquiátrico perdí en la ambulancia mi silbato y lo necesito con urgencia para poder continuar con mi meteórica carrera. Recordad que los enfermeros no recogen a cualquiera."
+            coordenada: "¡Ey, vosotros! He hackeado el sistema de los enfermeros y necesito vuestra ayuda. En uno de los traslados al psiquiátrico perdí mi silbato en la ambulancia y lo necesito con urgencia para poder continuar con mi meteórica carrera. Recordad que los enfermeros no recogen a cualquiera"
         },
 
         // QR7 (séptima prueba, después de GRANDE2)
