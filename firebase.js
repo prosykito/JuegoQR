@@ -1,6 +1,7 @@
 // ===============================
 // Inicializar Firebase
 // ===============================
+console.log("firebase.js VERSION 1.4");
 
 const firebaseConfig = {
 
