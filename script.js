@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 1.5");
+console.log("script.js VERSION 1.7");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
@@ -314,24 +314,7 @@ setTimeout(function () {
         document.getElementById("credencial").style.display = "block";
 
         document.getElementById("credencial").innerHTML = `
-
-            /*<div class="tarjeta">
-
-                <h2>HOSPITAL PSIQUIÁTRICO</h2>
-
-                <h2>SAN MARTÍN DE VALVENÍ</h2>
-
-                <hr>
-
-                <p><b>CREDENCIAL RECUPERADA</b></p>
-
-                <p><b>Equipo:</b> ${equipoEncontrado.nombre}</p>
-
-                <p><b>Expediente:</b> QR${id}</p>
-
-                <p><b>Estado:</b> ✔ AUTORIZADO</p>
-
-            </div>*/
+           
             <div class="tarjeta">
 
     <div class="cabecera">
