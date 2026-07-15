@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-
+console.log("script.js VERSION 1.4");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 
