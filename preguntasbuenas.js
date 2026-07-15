@@ -18,7 +18,7 @@ const preguntas = {
     },
 
     3: {
-        pregunta: "Entre todos los pacientes hubo uno que repetía constantemente :'San Martín, guarda secretos' ¿En qué fecha ocurrió?",
+        pregunta: "Entre todos los pacientes hubo uno que repetía constantemente 'San Martín, guarda secretos' ¿En qué fecha ocurrió?",
         respuesta: "28/09/82",
         mensaje: "",
     
