@@ -268,15 +268,25 @@ function comprobar(){
 
     }
 
+    // Ocultar resultados anteriores
+document.getElementById("credencial").style.display = "none";
+document.getElementById("credencial").innerHTML = "";
 
+document.getElementById("resultado").innerHTML = `
 
+<div class="resultado-ok">
 
+    <h2>🔍 VALIDANDO EXPEDIENTE...</h2>
 
+</div>
+
+`;
 
     // ===============================
     // TODO CORRECTO
     // ===============================
 
+    setTimeout(function(){
     if(
 
         codigoCorrecto &&
@@ -500,22 +510,11 @@ setTimeout(function () {
 
         </div>
 
-
-
         `;
-
-
 
     }
 
-
-
-}
-
-
-
-
-
+},800);
 
 // ===============================
 // ENTER EN CÓDIGO
