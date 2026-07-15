@@ -1,30 +1,35 @@
-// ======================================
-// Calcula las pruebas completadas
-// ======================================
-
 function calcularPruebasCompletadas(nombreEquipo, siguientePrueba) {
 
-    const equipo = equipos[nombreEquipo.toLowerCase().replace(" ", "")];
+    let equipo = null;
+
+    // Buscar el equipo por su nombre
+    for (const datos of Object.values(equipos)) {
+
+        if (datos.nombre === nombreEquipo) {
+
+            equipo = datos;
+            break;
+
+        }
+
+    }
 
     if (!equipo)
         return 0;
 
     let contador = 0;
 
-    // Recorremos las pruebas en orden
     for (let i = 1; i <= 9; i++) {
 
         const prueba = equipo.pruebas[i];
 
-        // Si el siguiente destino es esta coordenada,
-        // significa que ya ha completado las anteriores.
         if (prueba.coordenada === siguientePrueba)
             return contador;
 
         contador++;
+
     }
 
-    // Si ya va al FINAL significa que ha completado las 9 QR
     if (siguientePrueba === "FINAL")
         return 9;
 
