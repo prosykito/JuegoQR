@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 1.5");
+console.log("script.js VERSION 1.1");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
@@ -268,7 +268,7 @@ function comprobar(){
 
     }
 
-    // Ocultar resultados anteriores
+ /*   // Ocultar resultados anteriores
 document.getElementById("credencial").style.display = "none";
 document.getElementById("credencial").innerHTML = "";
 
@@ -280,7 +280,7 @@ document.getElementById("resultado").innerHTML = `
 
 </div>
 
-`;
+`;*/
 
     // ===============================
     // TODO CORRECTO
