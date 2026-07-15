@@ -1,4 +1,4 @@
-function calcularPruebasCompletadas(nombreEquipo, siguientePrueba) {
+/*function calcularPruebasCompletadas(nombreEquipo, siguientePrueba) {
 
     let equipo = null;
 
@@ -34,6 +34,45 @@ function calcularPruebasCompletadas(nombreEquipo, siguientePrueba) {
         return 9;
 
     return contador;
+
+}*/
+
+function calcularPruebasCompletadas(nombreEquipo, siguientePrueba) {
+
+    console.log("Buscando:", nombreEquipo);
+    console.log("Siguiente:", siguientePrueba);
+
+    for (const [clave, datos] of Object.entries(equipos)) {
+
+        console.log(clave, datos.nombre);
+
+        if (datos.nombre === nombreEquipo) {
+
+            console.log("¡¡ENCONTRADO!!");
+
+            let contador = 0;
+
+            for (let i = 1; i <= 9; i++) {
+
+                console.log(
+                    "Prueba",
+                    i,
+                    "->",
+                    datos.pruebas[i].coordenada
+                );
+
+                if (datos.pruebas[i].coordenada === siguientePrueba)
+                    return contador;
+
+                contador++;
+
+            }
+
+        }
+
+    }
+
+    return 0;
 
 }
 
