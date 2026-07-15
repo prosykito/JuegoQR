@@ -13,7 +13,7 @@ const preguntas = {
         respuesta: "4",
         mensaje: "correcto. el codigo es 5",
     
-        imagen: "",
+        imagen: "hospital.jpg",
         video: ""
     },
     3: {
