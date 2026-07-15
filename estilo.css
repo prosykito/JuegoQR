@@ -241,45 +241,6 @@ input:focus{
 }
 
 
-
-/* ===============================
-   BOTON
-================================ */
-
-/*button{
-
-    width:100%;
-
-    padding:18px;
-
-    margin-top:25px;
-
-
-    background:#8b2f2f;
-
-    color:white;
-
-
-    border:none;
-
-    border-radius:12px;
-
-
-    font-size:22px;
-
-    font-weight:bold;
-
-
-    cursor:pointer;
-
-}
-
-
-button:hover{
-
-    background:#ad4141;
-
-}*/ 
 /* ===============================
    BOTON - PANEL INDUSTRIAL
 ================================ */
@@ -390,6 +351,20 @@ button.diagnostico{
    RESULTADO
 ================================ */
 
+/*#resultado{
+
+    text-align:center;
+
+    font-size:22px;
+
+    margin-top:30px;
+
+}*/
+
+/* ===============================
+   RESULTADO
+================================ */
+
 #resultado{
 
     text-align:center;
@@ -397,6 +372,83 @@ button.diagnostico{
     font-size:22px;
 
     margin-top:30px;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+
+/* ===============================
+   RESULTADO CORRECTO
+================================ */
+
+.resultado-ok{
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #3d7a4a,
+        #16351d
+    );
+
+
+    border:
+
+    2px solid #78d38a;
+
+
+    color:#eaffea;
+
+
+    box-shadow:
+
+    0 0 20px rgba(80,255,100,.4),
+
+    inset 0 0 15px rgba(255,255,255,.15);
+
+
+}
+
+
+
+/* ===============================
+   RESULTADO ERROR
+================================ */
+
+.resultado-error{
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #8b2f2f,
+        #350909
+    );
+
+
+    border:
+
+    2px solid #d66;
+
+
+    color:#ffeaea;
+
+
+    box-shadow:
+
+    0 0 20px rgba(255,50,50,.4),
+
+    inset 0 0 15px rgba(255,255,255,.1);
+
 
 }
 
