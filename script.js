@@ -43,19 +43,7 @@ if (datos) {
         multimedia += `
 
 
-        <div id="avisoVideo">
-
-
-            <h2>
-                🎬 PRUEBA DE VÍDEO
-            </h2>
-
-
-            <p>
-                Cuando todo el equipo esté preparado,
-                pulsa el botón para comenzar.
-            </p>
-
+        <div id="avisoVideo">            
 
             <button 
                 onclick="mostrarVideo()">
