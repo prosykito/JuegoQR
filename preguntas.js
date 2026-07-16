@@ -1,6 +1,6 @@
 const preguntas = {
     1: {
-        pregunta: "Cuanto es 1+1",
+        pregunta: "Si estáis leyendo esto es porque habéis conseguido llegar hasta mi laboratorio y eso significa que habéis superado pruebas que muy pocos consiguen completar frente a vosotros tenéis cuatro preparados experimentales de colores verde amarillo azul y rojo solo uno contiene el suero estabilizador que os permitirá continuar los otros tres provocan efectos secundarios imprevisibles uno os hará reír sin control otro os dejará sin voz y el último hará que los enfermeros vuelvan a por vosotros por suerte todavía recuerdo algunas anotaciones de mis experimentos la bebida correcta no estaba situada en ninguno de los extremos la botella verde nunca debía administrarse antes que la correcta entre la botella correcta y la verde había exactamente una botella la amarilla estaba inmediatamente a la izquierda de una bebida que descarté durante el último ensayo si la roja fuese la correcta dos de estas anotaciones serían falsas y eso jamás ocurrió durante mis experimentos la amarilla tampoco puede ser la correcta porque entonces una de las anotaciones dejaría de cumplirse solo una botella fue aprobada por el comité de seguridad y fue exactamente la misma que permaneció sobre la mesa cuando terminé de eliminar todas las posibilidades ahora la decisión es vuestra pensad con calma porque en este laboratorio la suerte nunca ha sido suficiente para sobrevivir",
         respuesta: "2",
         mensaje: "¡Correcto! el codigo es 2",
     
