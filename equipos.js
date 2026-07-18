@@ -734,8 +734,8 @@ equipo11: {
 
         // QR2 (cuarta prueba)
         2: {
-            codigoEntrada: "2639",
-            codigoSalida: "9057",
+            codigoEntrada: "7407",
+            codigoSalida: "4899",
             coordenada: "R13"
         },
 
