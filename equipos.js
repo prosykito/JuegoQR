@@ -59,14 +59,14 @@ equipo1: {
         8: {
             codigoEntrada: "4659",
             codigoSalida: "2386",
-            coordenada: ""
+            coordenada: "Z19"
         },
 
         // QR9 (novena prueba, última antes de GRANDE3)
         9: {
             codigoEntrada: "2386",
             codigoSalida: "9201",
-            coordenada: "GRANDE3"
+            coordenada: "W20"
         }
 
     }
