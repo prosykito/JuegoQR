@@ -41,15 +41,15 @@ async function actualizarEstadoEquipo(
 ) {
 
     const nombresPruebas = {
-        qr1: "Padel",
-        qr2: "Petri",
-        qr3: "Trasera Bea",
-        qr4: "Eloy",
-        qr5: "iglesia",
-        qr6: "castillo",
-        qr7: "cementerio",
-        qr8: "bascula",
-        qr9: "buscaviejas"
+        QR1: "Padel",
+        QR2: "Petri",
+        QR3: "Trasera Bea",
+        QR4: "Eloy",
+        QR5: "iglesia",
+        QR6: "castillo",
+        QR7: "cementerio",
+        QR8: "bascula",
+        QR9: "buscaviejas"
     };
     
     if (nombresPruebas[ultimaPrueba]) {
