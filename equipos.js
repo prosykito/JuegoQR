@@ -2,7 +2,7 @@ const equipos = {
 
 equipo1: {
 
-    nombre: "Equipo 1",
+    nombre: "Duo Dinámico",
 
     pruebas: {
 
@@ -73,7 +73,7 @@ equipo1: {
 
 },equipo2: {
 
-    nombre: "Equipo 2",
+    nombre: "Irene, María, Sofía, Adriana",
 
     pruebas: {
 
@@ -145,7 +145,7 @@ equipo1: {
 },
 equipo3: {
 
-    nombre: "Equipo 3",
+    nombre: "Los John Deere",
 
     pruebas: {
 
@@ -217,7 +217,7 @@ equipo3: {
 },
 equipo4: {
 
-    nombre: "Equipo 4",
+    nombre: "Palencia 1",
 
     pruebas: {
 
@@ -289,7 +289,7 @@ equipo4: {
 },
 equipo5: {
 
-    nombre: "Equipo Hectorin",
+    nombre: "Palencia 2",
 
     pruebas: {
 
@@ -361,7 +361,7 @@ equipo5: {
 },
 equipo6: {
 
-    nombre: "Equipo 6",
+    nombre: "Yo que sé",
 
     pruebas: {
 
@@ -433,7 +433,7 @@ equipo6: {
 },
 equipo7: {
 
-    nombre: "Equipo 7",
+    nombre: "Desmadradas",
 
     pruebas: {
 
@@ -505,7 +505,7 @@ equipo7: {
 },
 equipo8: {
 
-    nombre: "Equipo 8",
+    nombre: "2 y 1",
 
     pruebas: {
 
@@ -577,7 +577,7 @@ equipo8: {
 },
 equipo9: {
 
-    nombre: "Equipo 9",
+    nombre: "Palencia 3",
 
     pruebas: {
 
