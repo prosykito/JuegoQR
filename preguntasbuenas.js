@@ -36,9 +36,9 @@ const preguntas = {
     },
 
      5: {
-        pregunta:"4+4",
-        respuesta:"8",
-        mensaje:"exitazo codigo 4",
+        pregunta:"El paciente 69 padecía una obsesión incorregible: calculaba la distancia hacia su libertad contando los pasos que lo separaban de los muros del pabellón. Vuestra percepción del espacio está infectada por su delirio. Si queréis encontrar el código de escape oculto, debéis situaros en la marca que encontraréis en el suelo y seguid las siguientes indicaciones: Clavad vuestra mirada en el Este y dad 22 pasos. Deteneos. Girad al norte 25 pasos y buscad el código",
+        respuesta:"1234",
+        mensaje:"",
     
         imagen: "",
         video: ""
