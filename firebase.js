@@ -27,35 +27,6 @@ db.collection("test").doc("conexion").set({
 });
 
 
-/*// =====================================
-// Actualizar estado del equipo
-// =====================================
-
-async function actualizarEstadoEquipo(
-
-    nombreEquipo,
-    ultimaPrueba,
-    siguientePrueba,
-    codigoSiguiente
-
-) {
-
-    await db
-        .collection("equipos")
-        .doc(nombreEquipo)
-        .set({
-
-            equipo: nombreEquipo,
-
-            ultimaPrueba: ultimaPrueba,
-            siguientePrueba: siguientePrueba,
-            codigoSiguiente: codigoSiguiente,
-
-            ultimaActualizacion: Date.now()
-
-        });
-
-}
 // =====================================
 // Actualizar estado del equipo
 // =====================================
@@ -69,40 +40,22 @@ async function actualizarEstadoEquipo(
 
 ) {
 
-    await db
-        .collection("equipos")
-        .doc(nombreEquipo)
-        .set({
-
-            equipo: nombreEquipo,
-
-            ultimaPrueba: ultimaPrueba,
-            siguientePrueba: siguientePrueba,
-            codigoSiguiente: codigoSiguiente,
-
-            progreso: firebase.firestore.FieldValue.increment(1),
-
-            ultimaActualizacion: Date.now()
-
-        },
-        {
-            merge:true
-        });
-
-}*/
-// =====================================
-// Actualizar estado del equipo
-// =====================================
-
-async function actualizarEstadoEquipo(
-
-    nombreEquipo,
-    ultimaPrueba,
-    siguientePrueba,
-    codigoSiguiente
-
-) {
-
+    const nombresPruebas = {
+        qr1: "Padel",
+        qr2: "Petri",
+        qr3: "Trasera Bea",
+        qr4: "Eloy",
+        qr5: "iglesia",
+        qr6: "castillo",
+        qr7: "cementerio",
+        qr8: "bascula",
+        qr9: "buscaviejas"
+    };
+    
+    if (nombresPruebas[ultimaPrueba]) {
+        ultimaPrueba = nombresPruebas[ultimaPrueba];
+    }
+    
     const ref = db.collection("equipos").doc(nombreEquipo);
 
     const documento = await ref.get();
