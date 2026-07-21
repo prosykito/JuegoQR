@@ -12,6 +12,8 @@ const ubicaciones = {
     "QR8": "Bascula",
     "QR9": "Buscavieja",
     "GRANDE3": "Loco atado",
-    "FINAL": "Plaza Olivo"
+    "FINAL": "Plaza Olivo",
+    "W24": "Abuela Judith",
+    "R23": "Iglesia"    
 
 };
