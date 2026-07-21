@@ -1,4 +1,4 @@
-console.log("admin.js VERSION 1.5");
+console.log("admin.js VERSION 1.6");
 
 db.collection("equipos")
 .onSnapshot(function(snapshot){
@@ -43,11 +43,9 @@ db.collection("equipos")
             <td>${equipo.equipo}</td>
 
             <td>${equipo.progreso || 0}</td>
-
-            //<td>${equipo.ultimaPrueba}</td>
+            
             <td>${ubicaciones[equipo.ultimaPrueba] || equipo.ultimaPrueba}</td>
-
-            //<td>${equipo.siguientePrueba}</td>
+            
             <td>${ubicaciones[equipo.siguientePrueba] || equipo.siguientePrueba}</td>
 
             <td class="${color}">
