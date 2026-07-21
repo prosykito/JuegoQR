@@ -1,4 +1,4 @@
-console.log("admin.js VERSION 1.4");
+console.log("admin.js VERSION 1.5");
 
 db.collection("equipos")
 .onSnapshot(function(snapshot){
