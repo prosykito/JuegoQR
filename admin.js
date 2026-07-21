@@ -44,9 +44,11 @@ db.collection("equipos")
 
             <td>${equipo.progreso || 0}</td>
 
-            <td>${equipo.ultimaPrueba}</td>
+            //<td>${equipo.ultimaPrueba}</td>
+            <td>${ubicaciones[equipo.ultimaPrueba] || equipo.ultimaPrueba}</td>
 
-            <td>${equipo.siguientePrueba}</td>
+            //<td>${equipo.siguientePrueba}</td>
+            <td>${ubicaciones[equipo.siguientePrueba] || equipo.siguientePrueba}</td>
 
             <td class="${color}">
                 ${minutos}:${segundos.toString().padStart(2,"0")}
