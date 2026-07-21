@@ -39,22 +39,6 @@ async function actualizarEstadoEquipo(
     codigoSiguiente
 
 ) {
-
-    const nombresPruebas = {
-        QR1: "Padel",
-        QR2: "Petri",
-        QR3: "Trasera Bea",
-        QR4: "Eloy",
-        QR5: "iglesia",
-        QR6: "castillo",
-        QR7: "cementerio",
-        QR8: "bascula",
-        QR9: "buscaviejas"
-    };
-    
-    if (nombresPruebas[ultimaPrueba]) {
-        ultimaPrueba = nombresPruebas[ultimaPrueba];
-    }
     
     const ref = db.collection("equipos").doc(nombreEquipo);
 
