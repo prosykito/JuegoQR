@@ -649,7 +649,7 @@ equipo9: {
 },
 equipo10: {
 
-    nombre: "Equipo 10",
+    nombre: "Santi y María",
 
     pruebas: {
 
