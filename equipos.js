@@ -2,7 +2,7 @@ const equipos = {
 
 equipo1: {
 
-    nombre: "Duo Dinámico",
+    nombre: "El Trío Dinámico",
 
     pruebas: {
 
