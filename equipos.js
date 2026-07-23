@@ -217,7 +217,7 @@ equipo3: {
 },
 equipo4: {
 
-    nombre: "Palencia 1",
+    nombre: "Los raposos de Abarca",
 
     pruebas: {
 
@@ -289,7 +289,7 @@ equipo4: {
 },
 equipo5: {
 
-    nombre: "Palencia 2",
+    nombre: "Los locos escapistas",
 
     pruebas: {
 
@@ -577,7 +577,7 @@ equipo8: {
 },
 equipo9: {
 
-    nombre: "Palencia 3",
+    nombre: "Gazelas y perezosas",
 
     pruebas: {
 
