@@ -376,7 +376,7 @@ equipo6: {
         2: {
             codigoEntrada: "9943",
             codigoSalida: "6109",
-            coordenada: "D15"
+            coordenada: "G15"
         },
 
         // QR3 (segunda prueba)
@@ -390,14 +390,14 @@ equipo6: {
         4: {
             codigoEntrada: "5988",
             codigoSalida: "8913",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR5 (quinta prueba)
         5: {
             codigoEntrada: "6590",
             codigoSalida: "2077",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR6 (sexta prueba)
