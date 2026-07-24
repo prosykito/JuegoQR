@@ -22,7 +22,8 @@ const ubicaciones = {
     "W34": "Cementerio", 
     "N18": "Almacen",
     "Z25": "Trasera Santi",
-    "W20": "Compresor"
+    "W20": "Compresor",
+    "X17": "Plaza Olivo"
     
     
 
