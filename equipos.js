@@ -865,7 +865,7 @@ equipo12: {
 },
 equipo13: {
 
-    nombre: "Equipo 13",
+    nombre: "Los psicópatas anónimos",
 
     pruebas: {
 
@@ -880,7 +880,7 @@ equipo13: {
         2: {
             codigoEntrada: "9086",
             codigoSalida: "4179",
-            coordenada: "D15"
+            coordenada: "G15"
         },
 
         // QR3 (tercera prueba)
@@ -901,7 +901,7 @@ equipo13: {
         5: {
             codigoEntrada: "9455",
             codigoSalida: "5861",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR6 (sexta prueba)
@@ -915,7 +915,7 @@ equipo13: {
         7: {
             codigoEntrada: "9707",
             codigoSalida: "2394",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR8 (octava prueba)
