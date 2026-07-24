@@ -38,7 +38,7 @@ equipo1: {
         5: {
             codigoEntrada: "5895",
             codigoSalida: "8962",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR6 (sexta prueba)
