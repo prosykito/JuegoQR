@@ -9,8 +9,8 @@ const ubicaciones = {
     "QR6": "Castillo",
     "GRANDE2": "Ambulancia",
     "QR7": "Cementerio",
-    "QR8": "Bascula",
-    "QR9": "Buscavieja",
+    "QR8": "Almacen",
+    "QR9": "Trasera Santi",
     "GRANDE3": "Loco atado",
     "FINAL": "Plaza Olivo",
     "W24": "Abuela Judith",
@@ -18,7 +18,10 @@ const ubicaciones = {
     "R17": "Centro Social",
     "R23": "Iglesia",
     "U14": "Castillo",
-    "W34": "Cementerio
+    "W34": "Cementerio, 
+    "N18": "Almacen",
+    "Z25": "Trasera Santi",
+    
     
 
 };
