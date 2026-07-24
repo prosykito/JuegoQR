@@ -160,7 +160,7 @@ equipo3: {
         2: {
             codigoEntrada: "6066",
             codigoSalida: "9330",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR3 (primera prueba)
@@ -195,7 +195,7 @@ equipo3: {
         7: {
             codigoEntrada: "9756",
             codigoSalida: "5934",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR8 (duodécima prueba, final del recorrido)
