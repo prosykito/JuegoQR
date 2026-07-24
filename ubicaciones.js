@@ -19,7 +19,7 @@ const ubicaciones = {
     "R23": "Iglesia",
     "U14": "Castillo",
     "¡Ey, vosotros! He hackeado el sistema de los enfermeros y necesito vuestra ayuda. En uno de los traslados al psiquiátrico perdí mi silbato en la ambulancia y lo necesito con urgencia para poder continuar con mi meteórica carrera. Recordad que los enfermeros no recogen a cualquiera.": "Ambulancia", 
-    "W34": "Cementerio, 
+    "W34": "Cementerio", 
     "N18": "Almacen",
     "Z25": "Trasera Santi",
     "W20": "Compresor"
