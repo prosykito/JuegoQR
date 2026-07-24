@@ -14,6 +14,7 @@ const ubicaciones = {
     "GRANDE3": "Loco atado",
     "FINAL": "Plaza Olivo",
     "W24": "Abuela Judith",
+    "G15": "Trasera Bea",
     "R23": "Iglesia"    
 
 };
