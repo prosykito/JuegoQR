@@ -2,7 +2,7 @@ const ubicaciones = {
 
     "QR1": "Padel",
     "QR2": "Abuela Judith",
-    "QR3": "Bea",
+    "QR3": "Trasera Bea",
     "GRANDE1": "Centro Social",
     "QR4": "Eloy",
     "QR5": "Iglesia",
@@ -14,8 +14,9 @@ const ubicaciones = {
     "GRANDE3": "Loco atado",
     "FINAL": "Plaza Olivo",
     "W24": "Abuela Judith",
-    "G15": "Trasera Bea",
-    "R23": "Iglesia",
-    "R17": "Centro Social"
+    "G15": "Trasera Bea",    
+    "R17": "Centro Social",
+    "R23": "Iglesia"
+    
 
 };
