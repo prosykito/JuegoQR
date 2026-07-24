@@ -736,7 +736,7 @@ equipo11: {
         2: {
             codigoEntrada: "7407",
             codigoSalida: "4899",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR3 (primera prueba)
@@ -771,7 +771,7 @@ equipo11: {
         7: {
             codigoEntrada: "1568",
             codigoSalida: "6986",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR8 (duodécima prueba, última prueba)
@@ -808,7 +808,7 @@ equipo12: {
         2: {
             codigoEntrada: "9119",
             codigoSalida: "1997",
-            coordenada: "D15"
+            coordenada: "G15"
         },
 
         // QR3 (tercera prueba)
@@ -829,7 +829,7 @@ equipo12: {
         5: {
             codigoEntrada: "3892",
             codigoSalida: "4368",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR6 (sexta prueba)
@@ -843,7 +843,7 @@ equipo12: {
         7: {
             codigoEntrada: "9640",
             codigoSalida: "2639",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR8 (octava prueba)
