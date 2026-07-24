@@ -232,7 +232,7 @@ equipo4: {
         2: {
             codigoEntrada: "1439",
             codigoSalida: "3560",
-            coordenada: "D15"
+            coordenada: "G15"
         },
 
         // QR3 (cuarta prueba)
@@ -253,7 +253,7 @@ equipo4: {
         5: {
             codigoEntrada: "1996",
             codigoSalida: "5402",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR6 (octava prueba)
@@ -267,7 +267,7 @@ equipo4: {
         7: {
             codigoEntrada: "6164",
             codigoSalida: "6263",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR8 (undécima prueba)
