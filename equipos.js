@@ -448,7 +448,7 @@ equipo7: {
         2: {
             codigoEntrada: "7345",
             codigoSalida: "4828",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR3 (primera prueba)
@@ -483,7 +483,7 @@ equipo7: {
         7: {
             codigoEntrada: "3408",
             codigoSalida: "2785",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR8 (duodécima prueba, última prueba)
