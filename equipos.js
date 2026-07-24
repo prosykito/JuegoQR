@@ -88,7 +88,7 @@ equipo1: {
         2: {
             codigoEntrada: "3218",
             codigoSalida: "1058",
-            coordenada: "D15"
+            coordenada: "G15"
         },
 
         // QR3 (segunda prueba)
