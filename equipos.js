@@ -102,14 +102,14 @@ equipo1: {
         4: {
             codigoEntrada: "5063",
             codigoSalida: "2844",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR5 (quinta prueba)
         5: {
             codigoEntrada: "2226",
             codigoSalida: "8706",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR6 (sexta prueba)
