@@ -1,1 +1,112 @@
 
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Comprobación de acceso</title>
+
+<style>
+
+body{
+
+    font-family:Arial;
+    background:white;
+    color:black;
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+
+}
+
+input{
+
+    width:100%;
+    padding:10px;
+    font-size:18px;
+    box-sizing:border-box;
+    margin-bottom:20px;
+
+}
+
+button{
+
+    padding:10px 25px;
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+#resultado{
+
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Comprobación de acceso</h2>
+
+<p id="pregunta">
+
+Si puedes leer este mensaje, la página ha cargado correctamente.
+
+</p>
+
+<label>Código</label>
+
+<input id="codigo">
+
+<label>Respuesta</label>
+
+<input id="respuesta">
+
+<button onclick="comprobar()">
+
+Comprobar
+
+</button>
+
+<p id="resultado"></p>
+
+<script>
+
+function comprobar(){
+
+    let codigo=document.getElementById("codigo").value.trim();
+
+    let respuesta=document.getElementById("respuesta").value.trim().toLowerCase();
+
+    if(codigo=="1234" && respuesta=="prueba"){
+
+        document.getElementById("resultado").style.color="green";
+
+        document.getElementById("resultado").textContent="CORRECTO";
+
+    }
+
+    else{
+
+        document.getElementById("resultado").style.color="red";
+
+        document.getElementById("resultado").textContent="INCORRECTO";
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
