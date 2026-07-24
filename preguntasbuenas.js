@@ -51,7 +51,7 @@ const preguntas = {
         mensaje:"",
 
         imagen: "",
-        video: "video_prueba.mp4"
+        video: "video_enfermera.mp4"
 
     },
      
