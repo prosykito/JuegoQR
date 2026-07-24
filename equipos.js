@@ -793,7 +793,7 @@ equipo11: {
 },
 equipo12: {
 
-    nombre: "Equipo 12",
+    nombre: "Los Rondilleros",
 
     pruebas: {
 
