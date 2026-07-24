@@ -304,7 +304,7 @@ equipo5: {
         2: {
             codigoEntrada: "5551",
             codigoSalida: "8688",
-            coordenada: "D15"
+            coordenada: "G15"
         },
 
         // QR3 (tercera prueba)
@@ -325,7 +325,7 @@ equipo5: {
         5: {
             codigoEntrada: "7067",
             codigoSalida: "9836",
-            coordenada: "R13"
+            coordenada: "U14"
         },
 
         // QR6 (sexta prueba)
@@ -339,7 +339,7 @@ equipo5: {
         7: {
             codigoEntrada: "6409",
             codigoSalida: "4904",
-            coordenada: "N17"
+            coordenada: "N18"
         },
 
         // QR8 (octava prueba)
