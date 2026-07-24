@@ -1,5 +1,5 @@
 const preguntas = {
-    Ax1: {
+    1: {
         pregunta: "Los locos se obsesionan con los números. Contad el número de cuadrados de la red de voleibol multiplicado por el número de pájaros de la pista de pádel y divide el resultado entre el número de barbacoas.",
         respuesta: "3995",
         mensaje: "",
@@ -8,7 +8,7 @@ const preguntas = {
         video: ""
     },
 
-    Tr2: {
+    2: {
         pregunta:"Los ojos pueden engañarte, así que confía únicamente en tus manos. Introduce la mano en la caja y descubre el diagnóstico oculto.",
         respuesta: "lunatico",
         mensaje: "",
@@ -17,7 +17,7 @@ const preguntas = {
         video: ""
     },
 
-    Jk3: {
+    3: {
         pregunta: "Entre todos los pacientes hubo uno que repetía constantemente 'San Martín, guarda secretos' ¿En qué fecha ocurrió?",
         respuesta: "28/09/82",
         mensaje: "",
