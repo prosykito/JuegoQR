@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Comprobación de acceso</title>
@@ -23,19 +21,28 @@ body{
 
 }
 
+label{
+
+    display:block;
+    margin-top:20px;
+    margin-bottom:5px;
+    font-weight:bold;
+
+}
+
 input{
 
     width:100%;
     padding:10px;
     font-size:18px;
     box-sizing:border-box;
-    margin-bottom:20px;
 
 }
 
 button{
 
-    padding:10px 25px;
+    margin-top:25px;
+    padding:12px 25px;
     font-size:18px;
     cursor:pointer;
 
@@ -43,7 +50,7 @@ button{
 
 #resultado{
 
-    margin-top:20px;
+    margin-top:25px;
     font-size:22px;
     font-weight:bold;
 
@@ -57,9 +64,23 @@ button{
 
 <h2>Comprobación de acceso</h2>
 
-<p id="pregunta">
+<p>
 
 Si puedes leer este mensaje, la página ha cargado correctamente.
+
+</p>
+
+<p>
+
+Introduce:
+
+<br><br>
+
+<b>Código:</b> 1234
+
+<br>
+
+<b>Respuesta:</b> prueba
 
 </p>
 
@@ -81,25 +102,55 @@ Comprobar
 
 <script>
 
+function normalizar(texto){
+
+    return texto
+        .trim()
+        .toLowerCase();
+
+}
+
 function comprobar(){
 
-    let codigo=document.getElementById("codigo").value.trim();
+    let codigoCorrecto =
+        normalizar(document.getElementById("codigo").value)=="1234";
 
-    let respuesta=document.getElementById("respuesta").value.trim().toLowerCase();
+    let respuestaCorrecta =
+        normalizar(document.getElementById("respuesta").value)=="prueba";
 
-    if(codigo=="1234" && respuesta=="prueba"){
+    let resultado=document.getElementById("resultado");
 
-        document.getElementById("resultado").style.color="green";
 
-        document.getElementById("resultado").textContent="CORRECTO";
+
+    if(codigoCorrecto && respuestaCorrecta){
+
+        resultado.style.color="green";
+
+        resultado.innerHTML="✅ CORRECTO";
+
+    }
+
+    else if(!codigoCorrecto && !respuestaCorrecta){
+
+        resultado.style.color="red";
+
+        resultado.innerHTML="❌ Código incorrecto<br><br>❌ Respuesta incorrecta";
+
+    }
+
+    else if(!codigoCorrecto){
+
+        resultado.style.color="red";
+
+        resultado.innerHTML="❌ Código incorrecto";
 
     }
 
     else{
 
-        document.getElementById("resultado").style.color="red";
+        resultado.style.color="red";
 
-        document.getElementById("resultado").textContent="INCORRECTO";
+        resultado.innerHTML="❌ Respuesta incorrecta";
 
     }
 
