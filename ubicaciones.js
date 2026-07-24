@@ -16,7 +16,9 @@ const ubicaciones = {
     "W24": "Abuela Judith",
     "G15": "Trasera Bea",    
     "R17": "Centro Social",
-    "R23": "Iglesia"
+    "R23": "Iglesia",
+    "U14": "Castillo",
+    "W34": "Cementerio
     
 
 };
