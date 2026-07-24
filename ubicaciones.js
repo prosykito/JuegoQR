@@ -15,6 +15,7 @@ const ubicaciones = {
     "FINAL": "Plaza Olivo",
     "W24": "Abuela Judith",
     "G15": "Trasera Bea",
-    "R23": "Iglesia"    
+    "R23": "Iglesia",
+    "R17": "Centro Social"
 
 };
