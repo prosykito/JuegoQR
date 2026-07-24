@@ -721,7 +721,7 @@ equipo10: {
 },
 equipo11: {
 
-    nombre: "Equipo 11",
+    nombre: "Palencia 4",
 
     pruebas: {
 
