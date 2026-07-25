@@ -1009,7 +1009,7 @@ equipo14: {
 },
 equipo15: {
 
-    nombre: "Equipo 15",
+    nombre: "pablo, lechones y Deu",
 
     pruebas: {
 
