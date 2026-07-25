@@ -23,7 +23,6 @@ const ubicaciones = {
     "N18": "Almacen",
     "Z25": "Trasera Santi",
     "W20": "Compresor",
-    "X17": "Plaza Olivo",
-    "D15": ""
+    "X17": "Plaza Olivo"
 
 };
