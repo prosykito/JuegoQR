@@ -721,7 +721,7 @@ equipo10: {
 },
 equipo11: {
 
-    nombre: "Palencia 4",
+    nombre: "Los RevuelcaTabobes",
 
     pruebas: {
 
