@@ -649,7 +649,7 @@ equipo9: {
 },
 equipo10: {
 
-    nombre: "Santi y María",
+    nombre: "Los Mapachinos",
 
     pruebas: {
 
