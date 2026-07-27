@@ -154,7 +154,77 @@ function normalizar(texto) {
 
 }
 
+// ======================================
+// Orden de las pruebas según el mapa
+// ======================================
 
+const progresoMapa = {
+
+    1: {
+        QR1:1,
+        QR2:2,
+        QR3:3,
+        GRANDE1:4,
+        QR4:5,
+        QR5:6,
+        QR6:7,
+        GRANDE2:8,
+        QR7:9,
+        QR8:10,
+        QR9:11,
+        GRANDE3:12,
+        FINAL:13
+    },
+
+    2: {
+        QR2:1,
+        QR3:2,
+        GRANDE1:3,
+        QR1:4,
+        QR5:5,
+        QR6:6,
+        GRANDE2:7,
+        QR4:8,
+        QR8:9,
+        QR9:10,
+        GRANDE3:11,
+        QR7:12,
+        FINAL:13
+    },
+
+    3: {
+        QR3:1,
+        GRANDE1:2,
+        QR1:3,
+        QR2:4,
+        QR6:5,
+        GRANDE2:6,
+        QR4:7,
+        QR5:8,
+        QR9:9,
+        GRANDE3:10,
+        QR7:11,
+        QR8:12,
+        FINAL:13
+    },
+
+    4: {
+        GRANDE1:1,
+        QR1:2,
+        QR2:3,
+        QR3:4,
+        GRANDE2:5,
+        QR4:6,
+        QR5:7,
+        QR6:8,
+        GRANDE3:9,
+        QR7:10,
+        QR8:11,
+        QR9:12,
+        FINAL:13
+    }
+
+};
 
 
 // ===============================
