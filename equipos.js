@@ -3,6 +3,7 @@ const equipos = {
 equipo1: {
 
     nombre: "El Trío Dinámico",
+    mapa: 1,
 
     pruebas: {
 
@@ -74,6 +75,7 @@ equipo1: {
 },equipo2: {
 
     nombre: "Las 4 Fantásticas",
+    mapa: 2,
 
     pruebas: {
 
@@ -146,6 +148,7 @@ equipo1: {
 equipo3: {
 
     nombre: "Los John Deere",
+    mapa: 3,
 
     pruebas: {
 
@@ -218,6 +221,7 @@ equipo3: {
 equipo4: {
 
     nombre: "Los raposos de Abarca",
+    mapa: 4,
 
     pruebas: {
 
@@ -290,6 +294,7 @@ equipo4: {
 equipo5: {
 
     nombre: "Los locos escapistas",
+    mapa: 1,
 
     pruebas: {
 
@@ -362,6 +367,7 @@ equipo5: {
 equipo6: {
 
     nombre: "Yo que sé",
+    mapa: 2,
 
     pruebas: {
 
@@ -434,6 +440,7 @@ equipo6: {
 equipo7: {
 
     nombre: "Desmadradas",
+    mapa: 3,
 
     pruebas: {
 
@@ -506,6 +513,7 @@ equipo7: {
 equipo8: {
 
     nombre: "2 y 1",
+    mapa: 4,
 
     pruebas: {
 
@@ -578,6 +586,7 @@ equipo8: {
 equipo9: {
 
     nombre: "Gacelas y perezosas",
+    mapa: 1,
 
     pruebas: {
 
@@ -650,6 +659,7 @@ equipo9: {
 equipo10: {
 
     nombre: "Los Mapachinos",
+    mapa: 2,
 
     pruebas: {
 
@@ -722,6 +732,7 @@ equipo10: {
 equipo11: {
 
     nombre: "Los RevuelcaTabobes",
+    mapa: 3,
 
     pruebas: {
 
@@ -794,6 +805,7 @@ equipo11: {
 equipo12: {
 
     nombre: "Los Rondilleros",
+    mapa: 4,
 
     pruebas: {
 
@@ -866,6 +878,7 @@ equipo12: {
 equipo13: {
 
     nombre: "Los psicópatas anónimos",
+    mapa: 1,
 
     pruebas: {
 
@@ -938,6 +951,7 @@ equipo13: {
 equipo14: {
 
     nombre: "Las Hippy Colgas",
+    mapa: 2,
 
     pruebas: {
 
@@ -1010,6 +1024,7 @@ equipo14: {
 equipo15: {
 
     nombre: "Los Esquizofrénicos",
+    mapa: 3,
 
     pruebas: {
 
@@ -1082,6 +1097,7 @@ equipo15: {
 equipo16: {
 
     nombre: "Equipo 16",
+    mapa: 4,
 
     pruebas: {
 
@@ -1154,6 +1170,7 @@ equipo16: {
 equipo17: {
 
     nombre: "Equipo 17",
+    mapa: 1,
 
     pruebas: {
 
@@ -1226,6 +1243,7 @@ equipo17: {
 equipo18: {
 
     nombre: "Equipo 18",
+    mapa: 2,
 
     pruebas: {
 
@@ -1298,6 +1316,7 @@ equipo18: {
 equipo19: {
 
     nombre: "Equipo 19",
+    mapa: 3,
 
     pruebas: {
 
@@ -1370,6 +1389,7 @@ equipo19: {
 equipo20: {
 
     nombre: "Equipo 20",
+    mapa: 4,
 
     pruebas: {
 
