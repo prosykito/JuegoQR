@@ -1,18 +1,5 @@
 console.log("admin.js VERSION 1.7");
 
-db.collection("equipos")
-.onSnapshot(function(snapshot){
-
-    let html = "";
-
-    let lista = [];
-
-    snapshot.forEach(function(doc){
-
-        lista.push(doc.data());
-
-    });
-
 // ======================================
 // Confirmar reinicio
 // ======================================
@@ -43,7 +30,25 @@ async function confirmarReinicio(){
     alert("✅ Gymkana reiniciada.");
 
 }
-    
+
+
+// ======================================
+// Actualizar tabla
+// ======================================
+
+db.collection("equipos")
+.onSnapshot(function(snapshot){
+
+    let html = "";
+
+    let lista = [];
+
+    snapshot.forEach(function(doc){
+
+        lista.push(doc.data());
+
+    });
+
     // Ordenar por progreso (mayor a menor)
     lista.sort(function(a,b){
 
@@ -74,9 +79,9 @@ async function confirmarReinicio(){
             <td>${equipo.equipo}</td>
 
             <td>${equipo.progreso || 0}</td>
-            
+
             <td>${ubicaciones[equipo.ultimaPrueba] || equipo.ultimaPrueba}</td>
-            
+
             <td>${ubicaciones[equipo.siguientePrueba] || equipo.siguientePrueba}</td>
 
             <td class="${color}">
