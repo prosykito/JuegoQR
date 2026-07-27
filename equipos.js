@@ -577,7 +577,7 @@ equipo8: {
 },
 equipo9: {
 
-    nombre: "Gazelas y perezosas",
+    nombre: "Gacelas y perezosas",
 
     pruebas: {
 
