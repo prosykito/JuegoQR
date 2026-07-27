@@ -1,4 +1,4 @@
-console.log("admin.js VERSION 1.6");
+console.log("admin.js VERSION 1.7");
 
 db.collection("equipos")
 .onSnapshot(function(snapshot){
@@ -13,6 +13,37 @@ db.collection("equipos")
 
     });
 
+// ======================================
+// Confirmar reinicio
+// ======================================
+
+async function confirmarReinicio(){
+
+    const clave = prompt("Introduce la clave para reiniciar la gymkana:");
+
+    if(clave === null)
+        return;
+
+    if(clave !== "1234"){
+
+        alert("❌ Clave incorrecta.");
+        return;
+
+    }
+
+    const confirmar = confirm(
+        "¿Seguro que quieres borrar el progreso de TODOS los equipos?"
+    );
+
+    if(!confirmar)
+        return;
+
+    await reiniciarGymkana();
+
+    alert("✅ Gymkana reiniciada.");
+
+}
+    
     // Ordenar por progreso (mayor a menor)
     lista.sort(function(a,b){
 
