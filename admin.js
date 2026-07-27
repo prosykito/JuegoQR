@@ -1,4 +1,4 @@
-console.log("admin.js VERSION 1.8");
+console.log("admin.js VERSION 1.6");
 
 // ======================================
 // Confirmar reinicio
@@ -78,7 +78,7 @@ db.collection("equipos")
 
             <td>${equipo.equipo}</td>
 
-            <td>${equipo.progreso || 0}</td>
+            <td>${equipo.progreso || 0}/13</td>
 
             <td>${ubicaciones[equipo.ultimaPrueba] || equipo.ultimaPrueba}</td>
 
