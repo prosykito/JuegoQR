@@ -1,7 +1,7 @@
 // ===============================
 // Inicializar Firebase
 // ===============================
-console.log("firebase.js VERSION 1.5");
+console.log("firebase.js VERSION 1.6");
 
 const firebaseConfig = {
 
@@ -36,7 +36,8 @@ async function actualizarEstadoEquipo(
     nombreEquipo,
     ultimaPrueba,
     siguientePrueba,
-    codigoSiguiente
+    codigoSiguiente,
+    progreso
 
 ) {
     
@@ -56,26 +57,7 @@ async function actualizarEstadoEquipo(
 
     };
 
-    // Si ya existe el documento
-    if (documento.exists) {
-
-        let actual = documento.data();
-
-        // Solo incrementamos si realmente ha avanzado
-        if (actual.ultimaPrueba !== ultimaPrueba) {
-
-            datos.progreso =
-                firebase.firestore.FieldValue.increment(1);
-
-        }
-
-    }
-    else {
-
-        // Primer registro del equipo
-        datos.progreso = 1;
-
-    }
+    datos.progreso=progreso;
 
     await ref.set(datos, { merge: true });
 
