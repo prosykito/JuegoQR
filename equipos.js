@@ -937,7 +937,7 @@ equipo13: {
 },
 equipo14: {
 
-    nombre: "Las Hipi Colgas",
+    nombre: "Las Hippy Colgas",
 
     pruebas: {
 
