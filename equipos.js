@@ -73,7 +73,7 @@ equipo1: {
 
 },equipo2: {
 
-    nombre: "Irene, María, Sofía, Adriana",
+    nombre: "Las 4 Fantásticas",
 
     pruebas: {
 
@@ -1009,7 +1009,7 @@ equipo14: {
 },
 equipo15: {
 
-    nombre: "pablo, lechones y Deu",
+    nombre: "Los Esquizofrénicos",
 
     pruebas: {
 
