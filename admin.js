@@ -1,4 +1,4 @@
-console.log("admin.js VERSION 1.7");
+console.log("admin.js VERSION 1.8");
 
 // ======================================
 // Confirmar reinicio
