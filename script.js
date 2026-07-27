@@ -1,7 +1,7 @@
 // ===============================
 // Obtener la pregunta de la URL
 // ===============================
-console.log("script.js VERSION 2.0");
+console.log("script.js VERSION 1.5");
 const parametros = new URLSearchParams(window.location.search);
 const id = parametros.get("id");
 const datos = preguntas[id];
