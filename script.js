@@ -315,16 +315,28 @@ function comprobar(){
 
         if(codigoCorrecto && respuestaCorrectaOK){
 
+            // Calcular el progreso real según el mapa
+            const progreso =
+                progresoMapa[equipoEncontrado.mapa]["QR" + id];
+            
+            console.log(
+                "Mapa:", equipoEncontrado.mapa,
+                "QR:", "QR" + id,
+                "Progreso:", progreso
+            );
+            
             actualizarEstadoEquipo(
-
+            
                 equipoEncontrado.nombre,
-
+            
                 "QR"+id,
-
+            
                 equipoEncontrado.pruebas[id].coordenada,
-
-                equipoEncontrado.pruebas[id].codigoSalida
-
+            
+                equipoEncontrado.pruebas[id].codigoSalida,
+            
+                progreso
+            
             );
 
 
