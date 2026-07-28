@@ -86,9 +86,27 @@ Comprobar
 
 <p id="resultado"></p>
 
+<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore-compat.js"></script>
+    
 <script>
     
-console.log("TEST VERSION 1.3");
+console.log("TEST VERSION 1.5");
+    
+    const firebaseConfig = {
+
+    apiKey: "AIzaSyDt4Y6mGL2nbUFNUTMpOP6cxyRnr3s2M2o",
+    authDomain: "gymkana-5b9f5.firebaseapp.com",
+    projectId: "gymkana-5b9f5",
+    storageBucket: "gymkana-5b9f5.firebasestorage.app",
+    messagingSenderId: "131301441295",
+    appId: "1:131301441295:web:1be4f934c78cfc3c29087a"
+
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
     
 function normalizar(texto){
 
@@ -125,9 +143,14 @@ function comprobar(){
         
             }
         
-            // De momento solo lo mostramos por consola
-            console.log("Equipo:", equipo);
+            db.collection("testConexion").add({
+
+            equipo: equipo,
         
+            fecha: Date.now()
+        
+            });
+                
             resultado.style.color="green";
         
             resultado.innerHTML=`
