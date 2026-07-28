@@ -110,55 +110,71 @@ function comprobar(){
 
     if(codigoCorrecto && respuestaCorrecta){
 
-        resultado.style.color="green";
-
-       resultado.innerHTML=`
-
-✅ <b>CORRECTO</b>
-
-<br><br>
-
-<b>Siguiente ubicación</b>
-
-<br>
-
-Aquí aparecerá la coordenada de la siguiente prueba.
-
-<br><br>
-
-<b>Código de acceso</b>
-
-<br>
-
-Aquí aparecerá el código que deberás introducir en la siguiente prueba.
-
-`;
-
-    }
-
-    else if(!codigoCorrecto && !respuestaCorrecta){
-
-        resultado.style.color="red";
-
-        resultado.innerHTML="❌ Código incorrecto<br><br>❌ Respuesta incorrecta";
-
-    }
-
-    else if(!codigoCorrecto){
-
-        resultado.style.color="red";
-
-        resultado.innerHTML="❌ Código incorrecto";
-
-    }
-
-    else{
-
-        resultado.style.color="red";
-
-        resultado.innerHTML="❌ Respuesta incorrecta";
-
-    }
+            let equipo = "";
+        
+            while(equipo.trim() === ""){
+        
+                const respuesta = prompt(
+                    "✅ Prueba superada.\n\nEscribe el nombre de tu equipo:"
+                );
+        
+                if(respuesta !== null)
+                    equipo = respuesta;
+        
+            }
+        
+            // De momento solo lo mostramos por consola
+            console.log("Equipo:", equipo);
+        
+            resultado.style.color="green";
+        
+            resultado.innerHTML=`
+        
+        ✅ <b>CORRECTO</b>
+        
+        <br><br>
+        
+        <b>Siguiente ubicación</b>
+        
+        <br>
+        
+        Aquí aparecerá la coordenada de la siguiente prueba.
+        
+        <br><br>
+        
+        <b>Código de acceso</b>
+        
+        <br>
+        
+        Aquí aparecerá el código que deberás introducir en la siguiente prueba.
+        
+        `;
+        
+        }
+        
+        else if(!codigoCorrecto && !respuestaCorrecta){
+        
+            resultado.style.color="red";
+        
+            resultado.innerHTML="❌ Código incorrecto<br><br>❌ Respuesta incorrecta";
+        
+        }
+        
+        else if(!codigoCorrecto){
+        
+            resultado.style.color="red";
+        
+            resultado.innerHTML="❌ Código incorrecto";
+        
+        }
+        
+        else{
+        
+            resultado.style.color="red";
+        
+            resultado.innerHTML="❌ Respuesta incorrecta";
+        
+        }
 
 }
 
