@@ -91,7 +91,7 @@ Comprobar
     
 <script>
     
-console.log("TEST VERSION 1.4");
+console.log("TEST VERSION 1.5");
     
     const firebaseConfig = {
 
@@ -131,25 +131,36 @@ function comprobar(){
     if(codigoCorrecto && respuestaCorrecta){
 
             let equipo = "";
-        
-            while(equipo.trim() === ""){
-        
-                const respuesta = prompt(
-                    "✅ Prueba superada.\n\nEscribe tu nombre o el nombre de tu equipo:"
-                );
-        
-                if(respuesta !== null)
-                    equipo = respuesta;
-        
-            }
-        
-            db.collection("testConexion").add({
 
-            equipo: equipo,
-        
-            fecha: Date.now()
-        
-            });
+            while (true) {
+            
+                const respuesta = prompt(
+                    "✅ Prueba superada.\n\nEscribe el nombre de tu equipo (Cancelar para omitir):"
+                );
+            
+                if (respuesta === null)
+                    break;
+            
+                if (respuesta.trim() !== "") {
+            
+                    equipo = respuesta.trim();
+                    break;
+            
+                }
+            
+            }
+            
+            if (equipo !== "") {
+            
+                db.collection("testConexion").add({
+            
+                    equipo: equipo,
+            
+                    fecha: Date.now()
+            
+                });
+            
+            }
                 
             resultado.style.color="green";
         
