@@ -68,6 +68,13 @@ equipo1: {
             codigoEntrada: "2386",
             codigoSalida: "9201",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX01",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -140,6 +147,13 @@ equipo1: {
             codigoEntrada: "1248",
             codigoSalida: "9634",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX02",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -213,6 +227,13 @@ equipo3: {
             codigoEntrada: "9632",
             codigoSalida: "6394",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX03",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -286,6 +307,13 @@ equipo4: {
             codigoEntrada: "5259",
             codigoSalida: "3140",
             coordenada: "X17"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX04",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -359,6 +387,13 @@ equipo5: {
             codigoEntrada: "4182",
             codigoSalida: "9947",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX05",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -432,6 +467,13 @@ equipo6: {
             codigoEntrada: "6825",
             codigoSalida: "2058",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX06",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -505,6 +547,13 @@ equipo7: {
             codigoEntrada: "7069",
             codigoSalida: "4397",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX07",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -578,6 +627,13 @@ equipo8: {
             codigoEntrada: "5778",
             codigoSalida: "8677",
             coordenada: "X17"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX08",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -651,6 +707,13 @@ equipo9: {
             codigoEntrada: "4859",
             codigoSalida: "2928",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX09",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -724,6 +787,13 @@ equipo10: {
             codigoEntrada: "3640",
             codigoSalida: "8252",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX10",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -797,6 +867,13 @@ equipo11: {
             codigoEntrada: "4444",
             codigoSalida: "1583",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX11",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -870,6 +947,13 @@ equipo12: {
             codigoEntrada: "8181",
             codigoSalida: "7759",
             coordenada: "X17"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX12",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -943,6 +1027,13 @@ equipo13: {
             codigoEntrada: "4889",
             codigoSalida: "4590",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX13",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -1016,6 +1107,13 @@ equipo14: {
             codigoEntrada: "8735",
             codigoSalida: "1070",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX14",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -1089,6 +1187,13 @@ equipo15: {
             codigoEntrada: "6970",
             codigoSalida: "5221",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX15",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -1162,6 +1267,13 @@ equipo16: {
             codigoEntrada: "3441",
             codigoSalida: "8872",
             coordenada: "X17"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX16",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -1235,6 +1347,13 @@ equipo17: {
             codigoEntrada: "3551",
             codigoSalida: "7867",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX17",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -1308,6 +1427,13 @@ equipo18: {
             codigoEntrada: "1018",
             codigoSalida: "4477",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX18",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -1381,6 +1507,13 @@ equipo19: {
             codigoEntrada: "2043",
             codigoSalida: "7753",
             coordenada: "W20"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX19",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
@@ -1454,6 +1587,13 @@ equipo20: {
             codigoEntrada: "9048",
             codigoSalida: "9868",
             coordenada: "X17"
+        },
+
+        // QR10 (comprobacion)
+        10: {
+            codigoEntrada: "XX20",
+            codigoSalida: "9999",
+            coordenada: "Z99"
         }
 
     }
