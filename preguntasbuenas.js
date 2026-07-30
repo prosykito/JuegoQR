@@ -80,5 +80,13 @@ const preguntas = {
         imagen: "cartel_vieja.jpg",
         video: ""
     },
+    10: {
+        pregunta:"Esta es vuestra primera prueba. Solo podreís continuar si sois capaces de resolver la siguiente fórmula. ¿Cuanto es 1+1?",
+        respuesta:"2",
+        mensaje:"",
+    
+        imagen: "",
+        video: ""
+    },
     
 };
