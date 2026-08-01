@@ -36,7 +36,7 @@ const preguntas = {
     },
 
      5: {
-        pregunta:"El paciente 69 padecía una obsesión incorregible: calculaba la distancia hacia su libertad contando los pasos que lo separaban de los muros del pabellón. Vuestra percepción del espacio está infectada por su delirio. Si queréis encontrar el código de escape oculto, debéis situaros en la marca que encontraréis en el suelo y seguid las siguientes indicaciones: Clavad vuestra mirada en el Este y dad 22 pasos. Deteneos. Girad al norte 25 pasos y encontraréis los dos primeros dígitos del código. Situaos en la siguiente marca, mirad al norte y dad 14 pasos. Girad al oeste 25 pasos y encontraréis los dos siguiente dígitos. Volved a colocaros en la situiente marca, mirad al norte y dad 12 pasos, girad al este 10 pasos y buscad los dos últimos dígitos del código.",
+        pregunta:"El paciente 69 padecía una obsesión incorregible: calculaba la distancia hacia su libertad contando los pasos que lo separaban de los muros del pabellón. Vuestra percepción del espacio está infectada por su delirio. Si queréis encontrar el código de escape oculto, debéis situaros en la marca que encontraréis en el suelo y seguid las siguientes indicaciones: Clavad vuestra mirada en el Este y dad 22 pasos. Deteneos. Girad al Norte 25 pasos y encontraréis los dos primeros dígitos del código. Situaos en la siguiente marca, mirad al Norte y dad 14 pasos. Girad al Oeste 25 pasos y encontraréis los dos siguientes dígitos. Volved a colocaros en la siguiente marca, mirad al Norte y dad 12 pasos, girad al Este 10 pasos y buscad los dos últimos dígitos del código.",
         respuesta:"852437",
         mensaje:"",
     
