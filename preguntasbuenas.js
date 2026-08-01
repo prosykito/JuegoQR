@@ -56,7 +56,7 @@ const preguntas = {
     },
      
     7: {
-        pregunta:"La mayoría de los pacientes olvidaron su nombre, pero jamás olvidaran una palabra. Buscad en el barrio de los quietos, entre los nombres de los que ya no están, que palabra se repite una y otra vez...",
+        pregunta:"La mayoría de los pacientes olvidaron su nombre, pero jamás olvidarán una palabra. Buscad en el barrio de los quietos, entre los nombres de los que ya no están, que palabra se repite una y otra vez...",
         respuesta:"familia",
         mensaje:"",
 
